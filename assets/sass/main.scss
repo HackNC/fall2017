@@ -1,0 +1,14 @@
+@import 'materialize';
+
+.background-light {
+    @extend .blue, .lighten-3;
+}
+
+.background-dark {
+    @extend .blue, .lighten-2;
+}
+
+.slide {
+    @extend .col, .s12;
+    min-height: 100%;
+}
