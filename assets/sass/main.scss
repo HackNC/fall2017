@@ -12,3 +12,27 @@
     @extend .col, .s12;
     min-height: 100%;
 }
+
+.title {
+    font-size: 72px;
+    font-weight: 600;
+}
+
+.nbar {
+    @extend .tabs;
+}
+
+.nitem {
+    @extend .tab;
+}
+
+.table-of-contents {
+    //
+}
+
+.table-of-contents .active-c {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-bottom: 5px;
+    border-bottom-color: #ffffff;
+}

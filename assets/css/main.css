@@ -3553,7 +3553,7 @@ small {
       width: 100%;
       border-radius: 0; } }
 
-.tabs {
+.tabs, .nbar {
   position: relative;
   overflow-x: auto;
   overflow-y: hidden;
@@ -3562,22 +3562,31 @@ small {
   background-color: #fff;
   margin: 0 auto;
   white-space: nowrap; }
-  .tabs.tabs-transparent {
+  .tabs.tabs-transparent, .tabs-transparent.nbar {
     background-color: transparent; }
-    .tabs.tabs-transparent .tab a,
+    .tabs.tabs-transparent .tab a, .tabs-transparent.nbar .tab a, .tabs.tabs-transparent .nitem a, .tabs-transparent.nbar .nitem a,
     .tabs.tabs-transparent .tab.disabled a,
-    .tabs.tabs-transparent .tab.disabled a:hover {
+    .tabs-transparent.nbar .tab.disabled a,
+    .tabs.tabs-transparent .disabled.nitem a,
+    .tabs-transparent.nbar .disabled.nitem a,
+    .tabs.tabs-transparent .tab.disabled a:hover,
+    .tabs-transparent.nbar .tab.disabled a:hover,
+    .tabs.tabs-transparent .disabled.nitem a:hover,
+    .tabs-transparent.nbar .disabled.nitem a:hover {
       color: rgba(255, 255, 255, 0.7); }
-    .tabs.tabs-transparent .tab a:hover,
-    .tabs.tabs-transparent .tab a.active {
+    .tabs.tabs-transparent .tab a:hover, .tabs-transparent.nbar .tab a:hover, .tabs.tabs-transparent .nitem a:hover, .tabs-transparent.nbar .nitem a:hover,
+    .tabs.tabs-transparent .tab a.active,
+    .tabs-transparent.nbar .tab a.active,
+    .tabs.tabs-transparent .nitem a.active,
+    .tabs-transparent.nbar .nitem a.active {
       color: #fff; }
-    .tabs.tabs-transparent .indicator {
+    .tabs.tabs-transparent .indicator, .tabs-transparent.nbar .indicator {
       background-color: #fff; }
-  .tabs.tabs-fixed-width {
+  .tabs.tabs-fixed-width, .tabs-fixed-width.nbar {
     display: flex; }
-    .tabs.tabs-fixed-width .tab {
+    .tabs.tabs-fixed-width .tab, .tabs-fixed-width.nbar .tab, .tabs.tabs-fixed-width .nitem, .tabs-fixed-width.nbar .nitem {
       flex-grow: 1; }
-  .tabs .tab {
+  .tabs .tab, .nbar .tab, .tabs .nitem, .nbar .nitem {
     display: inline-block;
     text-align: center;
     line-height: 48px;
@@ -3585,7 +3594,7 @@ small {
     padding: 0;
     margin: 0;
     text-transform: uppercase; }
-    .tabs .tab a {
+    .tabs .tab a, .nbar .tab a, .tabs .nitem a, .nbar .nitem a {
       color: rgba(238, 110, 115, 0.7);
       display: block;
       width: 100%;
@@ -3595,13 +3604,13 @@ small {
       text-overflow: ellipsis;
       overflow: hidden;
       transition: color .28s ease; }
-      .tabs .tab a:hover, .tabs .tab a.active {
+      .tabs .tab a:hover, .nbar .tab a:hover, .tabs .nitem a:hover, .nbar .nitem a:hover, .tabs .tab a.active, .nbar .tab a.active, .tabs .nitem a.active, .nbar .nitem a.active {
         background-color: transparent;
         color: #ee6e73; }
-    .tabs .tab.disabled a, .tabs .tab.disabled a:hover {
+    .tabs .tab.disabled a, .nbar .tab.disabled a, .tabs .disabled.nitem a, .nbar .disabled.nitem a, .tabs .tab.disabled a:hover, .nbar .tab.disabled a:hover, .tabs .disabled.nitem a:hover, .nbar .disabled.nitem a:hover {
       color: rgba(238, 110, 115, 0.7);
       cursor: default; }
-  .tabs .indicator {
+  .tabs .indicator, .nbar .indicator {
     position: absolute;
     bottom: 0;
     height: 2px;
@@ -3609,11 +3618,11 @@ small {
     will-change: left, right; }
 
 @media only screen and (max-width: 992px) {
-  .tabs {
+  .tabs, .nbar {
     display: flex; }
-    .tabs .tab {
+    .tabs .tab, .nbar .tab, .tabs .nitem, .nbar .nitem {
       flex-grow: 1; }
-      .tabs .tab a {
+      .tabs .tab a, .nbar .tab a, .tabs .nitem a, .nbar .nitem a {
         padding: 0 12px; } }
 .material-tooltip {
   padding: 10px 8px;
@@ -6837,3 +6846,13 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .slide {
   min-height: 100%; }
+
+.title {
+  font-size: 72px;
+  font-weight: 600; }
+
+.table-of-contents .active-c {
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-bottom: 5px;
+  border-bottom-color: #ffffff; }
