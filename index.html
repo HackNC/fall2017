@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
         <link rel="stylesheet" href="assets/css/main.css"></script>
 
@@ -17,13 +16,16 @@
             <div class="row center">
                 <p class="title">HackNC 2017</p>
                 <div class='ge'>October. XXX, 2017</div>
+                <a class="waves-effect waves-light btn-large component
+                modal-trigger" href="#register">Register
+                Now!</a>
             </div>
 
             <!-- TODO Setup Scrollspy here -->
             <div id="navbar" class='center'>
                 <ul class='nbar tabs-transparent section table-of-contents'>
                     <li class="nitem"><a href="#home">Home</a></li>
-                    <li class="nitem"><a href="#register">Register</a></li>
+                    <!-- <li class="nitem"><a href="#register">Register</a></li> -->
                     <li class="nitem"><a href="#travel">Travel</a></li>
                     <li class="nitem"><a href="#faq">FAQ</a></li>
                     <li class="nitem"><a href="#schedule">Schedule</a></li>
@@ -33,30 +35,63 @@
             </div>
         </div>
 
-        <div class="section background-dark scrollspy" id='register'>
+        <!-- <div class="section background-dark scrollspy" id='register'>
             <h1>Register</h1>
-        </div>
+            </div> -->
 
-        <div class="section background-light scrollspy" id='travel'>
-            <h1>Travel</h1>
-        </div>
+            <!-- Registration Moddal -->
+            <div id="register" class="modal">
+                <div class="modal-content">
+                    <h4>Registration</h4>
+                    <p>FORM TODO</p>
+                </div>
 
-        <div class="section background-dark scrollspy" id='faq'>
-            <h1>FAQ</h1>
-        </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect
+                        waves-green btn-flat">Submit</a>
+                </div>
+            </div>
 
-        <div class="section background-light scrollspy" id='schedule'>
-            <h1>Schedule</h1>
-        </div>
 
-        <div class="section background-dark scrollspy" id='sponsors'>
-            <h1>Sponsors</h1>
-        </div>
+            <div class="section background-dark scrollspy" id='travel'>
+                <div class="container">
+                    <h2 class="center">Travel Information</h2>
+                    <div class="row">
+                        <div class="col s6 center">
+                            <p>blah blah blah travel instructions</p>
+                            <p>more instructions, etc.</p>
+                            <p>something about reimbursement and stuff</p>
+                        </div>
 
-        <div class="section background-light scrollspy" id='contact'>
-            <h1>Contact</h1>
-        </div>
+                        <div class="col s6 center">
+                            <iframe
+                              width="600"
+                              height="600"
+                              frameborder="0" style="border:0"
+                              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC2Bjxvq5IuzTW4AruZGUZ9DKSICWAtsYc
+                                &q=Space+Needle,Seattle+WA" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <script src="assets/js/main.js"></script>
+            <div class="section background-light scrollspy" id='faq'>
+                <h1>FAQ</h1>
+            </div>
+
+            <div class="section background-dark scrollspy" id='schedule'>
+                <h1>Schedule</h1>
+            </div>
+
+            <div class="section background-light scrollspy" id='sponsors'>
+                <h1>Sponsors</h1>
+            </div>
+
+            <div class="section background-dark scrollspy" id='contact'>
+                <h1>Contact</h1>
+            </div>
+
+            <script src="assets/js/main.js"></script>
     </body>
 </html>

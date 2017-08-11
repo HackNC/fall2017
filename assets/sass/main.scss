@@ -1,3 +1,20 @@
+.table-of-contents {
+    a {
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1) ! important;
+            padding-bottom: 15px ! important;
+            border-bottom: 3px solid #fff ! important;
+        }
+        &.active {
+            font-weight: bold ! important;
+            background-color: rgba(255, 255, 255, 0.1) ! important;
+            //padding-bottom: 15px ! important;
+            border-bottom: 15px solid #000 ! important;
+        }
+    }
+}
+
 @import 'materialize';
 
 .background-light {
@@ -6,6 +23,10 @@
 
 .background-dark {
     @extend .blue, .lighten-2;
+}
+
+.component {
+    @extend .blue, .lighten-1;
 }
 
 .slide {
@@ -26,13 +47,10 @@
     @extend .tab;
 }
 
-.table-of-contents {
-    //
+.ge {
+    padding-bottom: 30px;
 }
 
-.table-of-contents .active-c {
-    font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding-bottom: 5px;
-    border-bottom-color: #ffffff;
+#register {
+    @extend .black-text;
 }

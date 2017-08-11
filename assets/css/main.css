@@ -1,3 +1,12 @@
+.table-of-contents a:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  padding-bottom: 15px !important;
+  border-bottom: 3px solid #fff !important; }
+.table-of-contents a.active {
+  font-weight: bold !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-bottom: 15px solid #000 !important; }
+
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -28,7 +37,7 @@
 .materialize-red-text.text-lighten-2 {
   color: #ee6e73 !important; }
 
-.materialize-red.lighten-1 {
+.materialize-red.lighten-1, .materialize-red.component {
   background-color: #ea454b !important; }
 
 .materialize-red-text.text-lighten-1 {
@@ -88,7 +97,7 @@
 .red-text.text-lighten-2 {
   color: #E57373 !important; }
 
-.red.lighten-1 {
+.red.lighten-1, .red.component {
   background-color: #EF5350 !important; }
 
 .red-text.text-lighten-1 {
@@ -172,7 +181,7 @@
 .pink-text.text-lighten-2 {
   color: #f06292 !important; }
 
-.pink.lighten-1 {
+.pink.lighten-1, .pink.component {
   background-color: #ec407a !important; }
 
 .pink-text.text-lighten-1 {
@@ -256,7 +265,7 @@
 .purple-text.text-lighten-2 {
   color: #ba68c8 !important; }
 
-.purple.lighten-1 {
+.purple.lighten-1, .purple.component {
   background-color: #ab47bc !important; }
 
 .purple-text.text-lighten-1 {
@@ -340,7 +349,7 @@
 .deep-purple-text.text-lighten-2 {
   color: #9575cd !important; }
 
-.deep-purple.lighten-1 {
+.deep-purple.lighten-1, .deep-purple.component {
   background-color: #7e57c2 !important; }
 
 .deep-purple-text.text-lighten-1 {
@@ -424,7 +433,7 @@
 .indigo-text.text-lighten-2 {
   color: #7986cb !important; }
 
-.indigo.lighten-1 {
+.indigo.lighten-1, .indigo.component {
   background-color: #5c6bc0 !important; }
 
 .indigo-text.text-lighten-1 {
@@ -478,85 +487,85 @@
 .indigo-text.text-accent-4 {
   color: #304ffe !important; }
 
-.blue, .background-light, .background-dark {
+.blue, .background-light, .background-dark, .component {
   background-color: #2196F3 !important; }
 
 .blue-text {
   color: #2196F3 !important; }
 
-.blue.lighten-5, .lighten-5.background-light, .lighten-5.background-dark {
+.blue.lighten-5, .lighten-5.background-light, .lighten-5.background-dark, .lighten-5.component {
   background-color: #E3F2FD !important; }
 
 .blue-text.text-lighten-5 {
   color: #E3F2FD !important; }
 
-.blue.lighten-4, .lighten-4.background-light, .lighten-4.background-dark {
+.blue.lighten-4, .lighten-4.background-light, .lighten-4.background-dark, .lighten-4.component {
   background-color: #BBDEFB !important; }
 
 .blue-text.text-lighten-4 {
   color: #BBDEFB !important; }
 
-.blue.lighten-3, .background-light, .lighten-3.background-dark {
+.blue.lighten-3, .background-light, .lighten-3.background-dark, .lighten-3.component {
   background-color: #90CAF9 !important; }
 
 .blue-text.text-lighten-3 {
   color: #90CAF9 !important; }
 
-.blue.lighten-2, .lighten-2.background-light, .background-dark {
+.blue.lighten-2, .lighten-2.background-light, .background-dark, .lighten-2.component {
   background-color: #64B5F6 !important; }
 
 .blue-text.text-lighten-2 {
   color: #64B5F6 !important; }
 
-.blue.lighten-1, .lighten-1.background-light, .lighten-1.background-dark {
+.blue.lighten-1, .lighten-1.background-light, .lighten-1.background-dark, .component {
   background-color: #42A5F5 !important; }
 
 .blue-text.text-lighten-1 {
   color: #42A5F5 !important; }
 
-.blue.darken-1, .darken-1.background-light, .darken-1.background-dark {
+.blue.darken-1, .darken-1.background-light, .darken-1.background-dark, .darken-1.component {
   background-color: #1E88E5 !important; }
 
 .blue-text.text-darken-1 {
   color: #1E88E5 !important; }
 
-.blue.darken-2, .darken-2.background-light, .darken-2.background-dark {
+.blue.darken-2, .darken-2.background-light, .darken-2.background-dark, .darken-2.component {
   background-color: #1976D2 !important; }
 
 .blue-text.text-darken-2 {
   color: #1976D2 !important; }
 
-.blue.darken-3, .darken-3.background-light, .darken-3.background-dark {
+.blue.darken-3, .darken-3.background-light, .darken-3.background-dark, .darken-3.component {
   background-color: #1565C0 !important; }
 
 .blue-text.text-darken-3 {
   color: #1565C0 !important; }
 
-.blue.darken-4, .darken-4.background-light, .darken-4.background-dark {
+.blue.darken-4, .darken-4.background-light, .darken-4.background-dark, .darken-4.component {
   background-color: #0D47A1 !important; }
 
 .blue-text.text-darken-4 {
   color: #0D47A1 !important; }
 
-.blue.accent-1, .accent-1.background-light, .accent-1.background-dark {
+.blue.accent-1, .accent-1.background-light, .accent-1.background-dark, .accent-1.component {
   background-color: #82B1FF !important; }
 
 .blue-text.text-accent-1 {
   color: #82B1FF !important; }
 
-.blue.accent-2, .accent-2.background-light, .accent-2.background-dark {
+.blue.accent-2, .accent-2.background-light, .accent-2.background-dark, .accent-2.component {
   background-color: #448AFF !important; }
 
 .blue-text.text-accent-2 {
   color: #448AFF !important; }
 
-.blue.accent-3, .accent-3.background-light, .accent-3.background-dark {
+.blue.accent-3, .accent-3.background-light, .accent-3.background-dark, .accent-3.component {
   background-color: #2979FF !important; }
 
 .blue-text.text-accent-3 {
   color: #2979FF !important; }
 
-.blue.accent-4, .accent-4.background-light, .accent-4.background-dark {
+.blue.accent-4, .accent-4.background-light, .accent-4.background-dark, .accent-4.component {
   background-color: #2962FF !important; }
 
 .blue-text.text-accent-4 {
@@ -592,7 +601,7 @@
 .light-blue-text.text-lighten-2 {
   color: #4fc3f7 !important; }
 
-.light-blue.lighten-1 {
+.light-blue.lighten-1, .light-blue.component {
   background-color: #29b6f6 !important; }
 
 .light-blue-text.text-lighten-1 {
@@ -676,7 +685,7 @@
 .cyan-text.text-lighten-2 {
   color: #4dd0e1 !important; }
 
-.cyan.lighten-1 {
+.cyan.lighten-1, .cyan.component {
   background-color: #26c6da !important; }
 
 .cyan-text.text-lighten-1 {
@@ -760,7 +769,7 @@
 .teal-text.text-lighten-2 {
   color: #4db6ac !important; }
 
-.teal.lighten-1 {
+.teal.lighten-1, .teal.component {
   background-color: #26a69a !important; }
 
 .teal-text.text-lighten-1 {
@@ -844,7 +853,7 @@
 .green-text.text-lighten-2 {
   color: #81C784 !important; }
 
-.green.lighten-1 {
+.green.lighten-1, .green.component {
   background-color: #66BB6A !important; }
 
 .green-text.text-lighten-1 {
@@ -928,7 +937,7 @@
 .light-green-text.text-lighten-2 {
   color: #aed581 !important; }
 
-.light-green.lighten-1 {
+.light-green.lighten-1, .light-green.component {
   background-color: #9ccc65 !important; }
 
 .light-green-text.text-lighten-1 {
@@ -1012,7 +1021,7 @@
 .lime-text.text-lighten-2 {
   color: #dce775 !important; }
 
-.lime.lighten-1 {
+.lime.lighten-1, .lime.component {
   background-color: #d4e157 !important; }
 
 .lime-text.text-lighten-1 {
@@ -1096,7 +1105,7 @@
 .yellow-text.text-lighten-2 {
   color: #fff176 !important; }
 
-.yellow.lighten-1 {
+.yellow.lighten-1, .yellow.component {
   background-color: #ffee58 !important; }
 
 .yellow-text.text-lighten-1 {
@@ -1180,7 +1189,7 @@
 .amber-text.text-lighten-2 {
   color: #ffd54f !important; }
 
-.amber.lighten-1 {
+.amber.lighten-1, .amber.component {
   background-color: #ffca28 !important; }
 
 .amber-text.text-lighten-1 {
@@ -1264,7 +1273,7 @@
 .orange-text.text-lighten-2 {
   color: #ffb74d !important; }
 
-.orange.lighten-1 {
+.orange.lighten-1, .orange.component {
   background-color: #ffa726 !important; }
 
 .orange-text.text-lighten-1 {
@@ -1348,7 +1357,7 @@
 .deep-orange-text.text-lighten-2 {
   color: #ff8a65 !important; }
 
-.deep-orange.lighten-1 {
+.deep-orange.lighten-1, .deep-orange.component {
   background-color: #ff7043 !important; }
 
 .deep-orange-text.text-lighten-1 {
@@ -1432,7 +1441,7 @@
 .brown-text.text-lighten-2 {
   color: #a1887f !important; }
 
-.brown.lighten-1 {
+.brown.lighten-1, .brown.component {
   background-color: #8d6e63 !important; }
 
 .brown-text.text-lighten-1 {
@@ -1492,7 +1501,7 @@
 .blue-grey-text.text-lighten-2 {
   color: #90a4ae !important; }
 
-.blue-grey.lighten-1 {
+.blue-grey.lighten-1, .blue-grey.component {
   background-color: #78909c !important; }
 
 .blue-grey-text.text-lighten-1 {
@@ -1552,7 +1561,7 @@
 .grey-text.text-lighten-2 {
   color: #e0e0e0 !important; }
 
-.grey.lighten-1 {
+.grey.lighten-1, .grey.component {
   background-color: #bdbdbd !important; }
 
 .grey-text.text-lighten-1 {
@@ -1585,7 +1594,7 @@
 .black {
   background-color: #000000 !important; }
 
-.black-text {
+.black-text, #register {
   color: #000000 !important; }
 
 .white {
@@ -5295,20 +5304,11 @@ input[type=range]:focus::-ms-fill-upper {
 .table-of-contents a {
   display: inline-block;
   font-weight: 300;
-  color: #757575;
-  padding-left: 20px;
+  color: #f0f0f0;
   height: 1.5rem;
   line-height: 1.5rem;
   letter-spacing: .4;
   display: inline-block; }
-  .table-of-contents a:hover {
-    color: #a8a8a8;
-    padding-left: 19px;
-    border-left: 1px solid #ee6e73; }
-  .table-of-contents a.active {
-    font-weight: 500;
-    padding-left: 18px;
-    border-left: 2px solid #ee6e73; }
 
 .side-nav {
   position: fixed;
@@ -6851,8 +6851,5 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   font-size: 72px;
   font-weight: 600; }
 
-.table-of-contents .active-c {
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding-bottom: 5px;
-  border-bottom-color: #ffffff; }
+.ge {
+  padding-bottom: 30px; }

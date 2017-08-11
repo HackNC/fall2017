@@ -1,3 +1,4 @@
 $(document).ready(function() {
-    $('.scrollspy').scrollSpy({activeClass: 'active-c'});
+    $('.scrollspy').scrollSpy();
+    $('.modal').modal();
 });
