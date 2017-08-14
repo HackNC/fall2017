@@ -13,11 +13,11 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         if ($(window).scrollTop() > navtop) {
-            $('#navbar').addClass('navbar-fixed');
+            $('#navbar').addClass('nfixed');
             $('#navbar').css('background-color', 'rgba(30, 136, 229, 1)');
         }
         else {
-            $('#navbar').removeClass('navbar-fixed');
+            $('#navbar').removeClass('nfixed');
             var alpha = $(window).scrollTop() / navtop;
             $('#navbar').css('background-color', 'rgba(30, 136, 229, '+ alpha + ')');
         }
