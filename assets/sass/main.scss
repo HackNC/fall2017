@@ -1,3 +1,13 @@
+* {
+    font-family: "Nunito";
+    // color: white;
+}
+
+.section-header {
+    font-family: "Quicksand";
+    // border-bottom: 3px solid #dedede;
+}
+
 .table-of-contents {
     a {
 
@@ -18,15 +28,29 @@
 @import 'materialize';
 
 .background-light {
-    @extend .blue, .lighten-3;
+    // @extend .blue, .lighten-3;
+    background-color: #f9f2e1;    
+    color: #363359;
 }
 
 .background-dark {
-    @extend .blue, .lighten-2;
+    // @extend .blue, .lighten-2;
+    background-color: #363359;
+    color: #f9f2e1; 
 }
 
 .component {
-    @extend .blue, .lighten-1;
+    // @extend .blue, .lighten-1;
+    background-color: #A3628F
+}
+
+.faq-dark {
+    background-color: #363359;
+    color: #f9f2e1;
+}
+
+.faq-light {
+    background-color: #f9f2e1;
 }
 
 .slide {
@@ -37,6 +61,10 @@
 .title {
     font-size: 72px;
     font-weight: 600;
+}
+
+.nav {
+    background-color: #363359 !important;
 }
 
 .nbar {
@@ -56,7 +84,7 @@
 }
 
 #navbar {
-    background-color: rgba(30, 136, 229, 0);
+    background-color: rgba(0, 60, 102, 0);
 }
 
 .nfixed {
