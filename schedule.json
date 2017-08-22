@@ -1,0 +1,28 @@
+[
+    {
+        "date": "Friday",
+        "schedule": [
+            {
+                "event": "workshop",
+                "time": "sometimes",
+                "location": "location"
+            },
+            {
+                "event": "Info Sess",
+                "time": "sometimes later",
+                "location": "location"
+            }
+        ]
+    },
+    {
+        "date": "Saturday",
+        "schedule": [
+            {
+                "event": "stuff",
+                "time": "sometimes",
+                "location": "location"
+            }
+        ]
+    }
+]
+
