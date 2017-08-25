@@ -4,3 +4,17 @@
  * Debugger PIN: 272-706-597
 127.0.0.1 - - [25/Aug/2017 14:39:15] "GET / HTTP/1.1" 200 -
 127.0.0.1 - - [25/Aug/2017 14:39:16] "GET /schedule.json HTTP/1.1" 404 -
+ * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 272-706-597
+127.0.0.1 - - [25/Aug/2017 14:44:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2017 14:44:25] "GET /schedule.json HTTP/1.1" 404 -
+ * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 272-706-597
+127.0.0.1 - - [25/Aug/2017 14:44:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2017 14:44:28] "GET /schedule.json HTTP/1.1" 404 -
+127.0.0.1 - - [25/Aug/2017 14:44:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2017 14:44:29] "GET /schedule.json HTTP/1.1" 404 -
