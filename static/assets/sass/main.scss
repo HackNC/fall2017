@@ -1,27 +1,6 @@
-* {
-    font-family: "Nunito";
-    // color: white;
-}
-
-.section-header {
-    font-family: "Quicksand";
-    // border-bottom: 3px solid #dedede;
-}
-
-#home {
-    // padding-bottom: 0;
-}
-
 .table-of-contents {
-    // width: 100%;
-    // height: 50px;
-    // margin: 0 0 0 0;
-    // padding: 0 0 0 0;
-    // li {
-    //     width: 100px;
-    //     display: inline-block;
-    // }
     a {
+
         &:hover {
             background-color: rgba(255, 255, 255, 0.1) ! important;
             padding-bottom: 15px ! important;
@@ -31,7 +10,7 @@
             font-weight: bold ! important;
             background-color: rgba(255, 255, 255, 0.1) ! important;
             //padding-bottom: 15px ! important;
-            // border-bottom: 15px solid #000 ! important;
+            border-bottom: 15px solid #000 ! important;
         }
     }
 }
@@ -39,19 +18,16 @@
 @import 'materialize';
 
 .background-light {
-    // @extend .blue, .lighten-3;
     background-color: #f9f2e1;    
     color: #363359;
 }
 
 .background-dark {
-    // @extend .blue, .lighten-2;
     background-color: #363359;
     color: #f9f2e1; 
 }
 
 .component {
-    // @extend .blue, .lighten-1;
     background-color: #A3628F
 }
 
@@ -74,18 +50,12 @@
     font-weight: 600;
 }
 
-.nav {
-    // background-color: #363359 !important;
-}
-
 .nbar {
     @extend .tabs;
-    // background-color: #363359 !important;
 }
 
 .nitem {
     @extend .tab;
-    // background-color: #363359 !important;
 }
 
 .ge {
@@ -97,7 +67,7 @@
 }
 
 #navbar {
-    background-color: rgba(0, 60, 102, 0);
+    background-color: rgba(30, 136, 229, 0);
 }
 
 .nfixed {
@@ -105,5 +75,4 @@
     z-index: 100;
     position: fixed;
     width: 100%;
-    // height: 50px;
 }

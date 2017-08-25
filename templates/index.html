@@ -6,9 +6,7 @@
 
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-        <link rel="stylesheet" href="assets/css/main.css"></script>
-
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand|Cabin|Nunito" rel="stylesheet">
+        <link rel="stylesheet" href="static/assets/css/main.css"></script>
 
         <title>HackNC 2017</title>
     </head>
@@ -18,21 +16,27 @@
             <div class="row center">
                 <p class="title">HackNC 2017</p>
                 <div class='ge'>October. XXX, 2017</div>
-                <a class="waves-effect waves-light btn-large component
-                modal-trigger" href="#register">Register
-                Now!</a>
+                <p class="btn-large component">Registration Coming Soon!</p>
+                <br>
+                <div class='input-field inline'>
+                    <input id='email' type='email' class='validate'></input>
+                    <label for='email' data-error='Please enter a valid
+                        email.'>Get on our mailing list!</label>
+                </div>
+                <button class='btn waves-effect waves-light component'
+                   id='submit-email'>Submit!</button>
             </div>
 
             <!-- TODO Setup Scrollspy here -->
-            <div id="navbar" class="center">
+            <div id="navbar" class='center'>
                 <ul class='nbar tabs-transparent section table-of-contents'>
-                    <li class="nitem"><a class="black-text" href="#home">Home</a></li>
-                    <!-- <li class="nitem"><a href="#register">Register</a></li> -->
-                    <li class="nitem"><a class="black-text" href="#travel">Travel</a></li>
-                    <li class="nitem"><a class="black-text" href="#faq">FAQ</a></li>
-                    <li class="nitem"><a class="black-text" href="#schedule">Schedule</a></li>
-                    <li class="nitem"><a class="black-text" href="#sponsors">Sponsors</a></li>
-                    <li class="nitem"><a class="black-text" href="#contact">Contact</a></li>
+                    <li class="nitem"><a class="indigo-text darken 4" href="#home">Home</a></li>
+                    <!-- <li class="nitem"><a class="indigo-text darken 4" href="#register">Register</a></li> -->
+                    <li class="nitem"><a class="indigo-text darken 4" href="#travel">Travel</a></li>
+                    <li class="nitem"><a class="indigo-text darken 4" href="#faq">FAQ</a></li>
+                    <li class="nitem"><a class="indigo-text darken 4" href="#schedule">Schedule</a></li>
+                    <li class="nitem"><a class="indigo-text darken 4" href="#sponsors">Sponsors</a></li>
+                    <li class="nitem"><a class="indigo-text darken 4" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -57,7 +61,7 @@
 
             <div class="section background-dark scrollspy" id='travel'>
                 <div class="container">
-                    <h2 class="section-header center">Travel Information</h2> 
+                    <h2 class="center">Travel Information</h2>
                     <div class="row">
                         <div class="col s6 center">
                             <p>blah blah blah travel instructions</p>
@@ -75,15 +79,12 @@
                             </iframe>
                         </div>
                     </div>
-                    <img src="assets/images/tube_dude.png" style="width: 30%;">
-                    <img src="assets/images/teacher_girl.png" style="width:30%;">
-                    <img src="assets/images/running_guy.png" style="width:30%;">
                 </div>
             </div>
 
             <div class="section background-light scrollspy" id='faq'>
                 <div class="container">
-                    <h2 class="section-header center">FAQ</h2>
+                    <h2 class="center">FAQ</h2>
                     <ul class="collapsible popout" data-collapsible="accordion">
                         <li>
                             <div class="collapsible-header faq-dark"><i class="material-icons"></i>What is a hackathon?</div>
@@ -134,70 +135,25 @@
                             <div class="collapsible-body faq-dark"><p>Answer.</p></div>
                         </li>
                     </ul>
-                    <img src="assets/images/tube_dude.png" style="width: 30%;">
-                    <img src="assets/images/teacher_girl.png" style="width:30%;">
-                    <img src="assets/images/running_guy.png" style="width:30%;">
                 </div>
             </div>
 
             <div class="section background-dark scrollspy" id='schedule'>
-                <div class="container">
-                    <h2 class="section-header center">Schedule</h2>
-                    </table>
-                    <h3>Friday</h3>
-                    <table class="schedule">
-                        <thead>
-                            <tr><th>Event</th><th>Time</th><th>Location</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>workshop</td><td>sometime</td><td>class1</td></tr>
-                            <tr><td>info session</td><td>someday</td><td>class2</td></tr>
-                            <tr><td>talk</td><td>time</td><td>class3</td></tr>
-                        </tbody>
-                    </table>
-                    <h3>Saturday</h3>
-                    <table class="schedule">
-                        <thead>
-                            <tr><th>Event</th><th>Time</th><th>Location</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>workshop</td><td>sometime</td><td>class1</td></tr>
-                            <tr><td>info session</td><td>someday</td><td>class2</td></tr>
-                            <tr><td>talk</td><td>time</td><td>class3</td></tr>
-                            <tr><td>workshop</td><td>sometime</td><td>class1</td></tr>
-                            <tr><td>info session</td><td>someday</td><td>class2</td></tr>
-                            <tr><td>talk</td><td>time</td><td>class3</td></tr>
-                            <tr><td>workshop</td><td>sometime</td><td>class1</td></tr>
-                            <tr><td>info session</td><td>someday</td><td>class2</td></tr>
-                            <tr><td>talk</td><td>time</td><td>class3</td></tr>
-                            <tr><td>workshop</td><td>sometime</td><td>class1</td></tr>
-                            <tr><td>info session</td><td>someday</td><td>class2</td></tr>
-                            <tr><td>talk</td><td>time</td><td>class3</td></tr>
-                        </tbody>
-                    </table>
-                    <h3>Sunday</h3>
-                    <table class="schedule">
-                        <thead>
-                            <tr><th>Event</th><th>Time</th><th>Location</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>workshop</td><td>sometime</td><td>class1</td></tr>
-                            <tr><td>info session</td><td>someday</td><td>class2</td></tr>
-                            <tr><td>talk</td><td>time</td><td>class3</td></tr>
-                        </tbody>
-                    </table>
-                    <img src="assets/images/running_guy.png" style="width:30%;">
+                <div class="container" id='schedule-container'>
+                    <h2 class="center">Schedule</h2>
                 </div>
             </div>
 
             <div class="section background-light scrollspy" id='sponsors'>
-                <h1 class="section-header center">Sponsors</h1>
+                <h1>Sponsors</h1>
             </div>
 
             <div class="section background-dark scrollspy" id='contact'>
-                <h1 class="section-header center">Contact</h1>
+                <h1>Contact</h1>
             </div>
 
-            <script src="assets/js/main.js"></script>
+            <script src="static/assets/js/main.js"></script>
+            <script src="static/assets/js/schedule.js"></script>
+            <script src="static/assets/js/register.js"></script>
     </body>
 </html>

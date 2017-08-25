@@ -1,18 +1,12 @@
-* {
-  font-family: "Nunito"; }
-
-.section-header {
-  font-family: "Quicksand"; }
-
 .table-of-contents a:hover {
   background-color: rgba(255, 255, 255, 0.1) !important;
   padding-bottom: 15px !important;
   border-bottom: 3px solid #fff !important; }
 .table-of-contents a.active {
   font-weight: bold !important;
-  background-color: rgba(255, 255, 255, 0.1) !important; }
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-bottom: 15px solid #000 !important; }
 
-/* RGB */
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -6879,7 +6873,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   padding-bottom: 30px; }
 
 #navbar {
-  background-color: rgba(0, 60, 102, 0); }
+  background-color: rgba(30, 136, 229, 0); }
 
 .nfixed {
   top: 0;
