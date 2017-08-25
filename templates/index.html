@@ -6,7 +6,7 @@
 
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-        <link rel="stylesheet" href="assets/css/main.css"></script>
+        <link rel="stylesheet" href="static/assets/css/main.css"></script>
 
         <title>HackNC 2017</title>
     </head>
@@ -16,9 +16,15 @@
             <div class="row center">
                 <p class="title">HackNC 2017</p>
                 <div class='ge'>October. XXX, 2017</div>
-                <a class="waves-effect waves-light btn-large component
-                modal-trigger" href="#register">Register
-                Now!</a>
+                <p class="btn-large component">Registration Coming Soon!</p>
+                <br>
+                <div class='input-field inline'>
+                    <input id='email' type='email' class='validate'></input>
+                    <label for='email' data-error='Please enter a valid
+                        email.'>Get on our mailing list!</label>
+                </div>
+                <button class='btn waves-effect waves-light component'
+                   id='submit-email'>Submit!</button>
             </div>
 
             <!-- TODO Setup Scrollspy here -->
@@ -146,7 +152,8 @@
                 <h1>Contact</h1>
             </div>
 
-            <script src="assets/js/main.js"></script>
-            <script src="assets/js/schedule.js"></script>
+            <script src="static/assets/js/main.js"></script>
+            <script src="static/assets/js/schedule.js"></script>
+            <script src="static/assets/js/register.js"></script>
     </body>
 </html>

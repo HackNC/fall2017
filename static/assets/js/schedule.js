@@ -1,4 +1,4 @@
-$.getJSON("schedule.json", function(data) {
+$.getJSON("/static/schedule.json", function(data) {
     data.forEach(function(date) {
         $("#schedule-container").append(
            $('<h3>')
