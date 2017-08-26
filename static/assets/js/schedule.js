@@ -8,6 +8,15 @@ $.getJSON("/static/schedule.json", function(data) {
         var $table = $('<table>', {'class': 'schedule'});
         var $schBody = $('<tbody>');
 
+        $table.append(
+            $('<thead>').append(
+                $('<tr>')
+                  .append($('<th>', {"style": "width:20%;"}).text('Time'))
+                  .append($('<th>', {"style": "width:60%;"}).text('Event'))
+                  .append($('<th>', {'style': "width:20%;"}).text('Location'))
+            )
+        );
+
         date['schedule'].forEach(function(element) {
             var row = $('<tr>')
             row.append('<td>')
@@ -25,7 +34,6 @@ $.getJSON("/static/schedule.json", function(data) {
         
         $table.append($schBody);
         $('#schedule-container').append($table);
-
     });
 });
 
