@@ -18,15 +18,26 @@
 @import 'materialize';
 
 .background-light {
-    @extend .blue, .lighten-3;
+    background-color: #f9f2e1;    
+    color: #363359;
 }
 
 .background-dark {
-    @extend .blue, .lighten-2;
+    background-color: #363359;
+    color: #f9f2e1; 
 }
 
 .component {
-    @extend .blue, .lighten-1;
+    background-color: #A3628F
+}
+
+.faq-dark {
+    background-color: #363359;
+    color: #f9f2e1;
+}
+
+.faq-light {
+    background-color: #f9f2e1;
 }
 
 .slide {
