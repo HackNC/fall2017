@@ -14,12 +14,12 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if ($(window).scrollTop() > navtop) {
             $('#navbar').addClass('nfixed');
-            $('#navbar').css('background-color', 'rgba(249, 242, 225, 1)');
+            $('#navbar').css('background-color', 'rgba(30, 136, 229, 1)');
         }
         else {
             $('#navbar').removeClass('nfixed');
             var alpha = $(window).scrollTop() / navtop;
-            $('#navbar').css('background-color', 'rgba(249, 242, 225, '+ alpha + ')');
+            $('#navbar').css('background-color', 'rgba(30, 136, 229, '+ alpha + ')');
         }
     });
 });
