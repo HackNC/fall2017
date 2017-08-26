@@ -1958,9 +1958,11 @@ optgroup {
  */
 table {
   border-collapse: collapse;
+  table-layout: fixed;
   border-spacing: 0; }
 
-td,
+td {
+    width: 33%; }
 th {
   padding: 0; }
 
