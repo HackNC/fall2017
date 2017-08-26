@@ -15,16 +15,19 @@
         <div class="section background-light scrollspy" id='home'>
             <div class="row center">
                 <p class="title">HackNC 2017</p>
-                <div class='ge'>October. XXX, 2017</div>
+                <div class='ge'>Nov. 3 - Nov. 5, 2017</div>
                 <p class="btn-large component">Registration Coming Soon!</p>
                 <br>
+                <form method='post'>
                 <div class='input-field inline'>
-                    <input id='email' type='email' class='validate'></input>
+                    <input name='email' id='email' type='email' class='validate'></input>
                     <label for='email' data-error='Please enter a valid
                         email.'>Get on our mailing list!</label>
                 </div>
                 <button class='btn waves-effect waves-light component'
                    id='submit-email'>Submit!</button>
+
+                </form>
             </div>
 
             <!-- TODO Setup Scrollspy here -->
@@ -37,6 +40,7 @@
                     <li class="nitem"><a class="indigo-text darken 4" href="#schedule">Schedule</a></li>
                     <li class="nitem"><a class="indigo-text darken 4" href="#sponsors">Sponsors</a></li>
                     <li class="nitem"><a class="indigo-text darken 4" href="#contact">Contact</a></li>
+
                 </ul>
             </div>
         </div>
@@ -133,6 +137,7 @@
                         <li>
                             <div class="collapsible-header faq-light"><i class="material-icons"></i>How can I volunteer or mentor?</div>
                             <div class="collapsible-body faq-dark"><p>Answer.</p></div>
+
                         </li>
                     </ul>
                 </div>
@@ -155,5 +160,11 @@
             <script src="static/assets/js/main.js"></script>
             <script src="static/assets/js/schedule.js"></script>
             <script src="static/assets/js/register.js"></script>
+
+            {% if msg %}
+            <script>
+Materialize.toast('{{ msg }}', 4000)
+            </script>
+            {% endif %}
     </body>
 </html>
