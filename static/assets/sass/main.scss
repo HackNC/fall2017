@@ -28,7 +28,11 @@
 }
 
 .component {
-    background-color: #A3628F
+    background-color: #A3628F ! important;
+}
+
+.component:hover {
+    background-color: #A0598C ! important;
 }
 
 .faq-dark {
