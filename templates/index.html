@@ -66,9 +66,9 @@
                     <h2 class="center">Travel Information</h2>
                     <div class="row">
                         <div class="col s6 center">
-                            <p>blah blah blah travel instructions</p>
-                            <p>more instructions, etc.</p>
-                            <p>something about reimbursement and stuff</p>
+                            {% for para in travel %}
+                            <p>{{ para }}</p>
+                            {% endfor %}
                         </div>
 
                         <div class="col s6 center">
