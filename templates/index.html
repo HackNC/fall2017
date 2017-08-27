@@ -6,8 +6,6 @@
 
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-
         <link rel="stylesheet" href="static/assets/css/main.css"></script>
 
         <title>HackNC 2017</title>
@@ -32,52 +30,25 @@
             </div>
 
             <!-- TODO Setup Scrollspy here -->
-
-            <!-- TODO Get a mobile navbar to work-->
-            <!-- <nav>
-              <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Logo</a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#travel">Travel</a></li>
-                  <li><a href="#faq">FAQ</a></li>
-                  <li><a href="#schedule">Schedule</a></li>
-                  <li><a href="#sponsors">Sponsors</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#travel">Travel</a></li>
-                  <li><a href="#faq">FAQ</a></li>
-                  <li><a href="#schedule">Schedule</a></li>
-                  <li><a href="#sponsors">Sponsors</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </div>
-            </nav> -->
-
-            <!--HIDDEN ON MOBILE-->
-            <div id="navbar" class='center hide-on-large-only'>
-                <ul class='nbar tabs-transparent section table-of-contents'>
-                    <li class="nitem"><a class="indigo-text darken 4" href="#home">Home mobile</a></li>
-                    <!-- <li class="nitem"><a class="indigo-text darken 4" href="#register">Register</a></li> -->
-                    <li class="nitem"><a class="indigo-text darken 4" href="#travel">Travel</a></li>
-                    <li class="nitem"><a class="indigo-text darken 4" href="#faq">FAQ</a></li>
-                    <li class="nitem"><a class="indigo-text darken 4" href="#schedule">Schedule</a></li>
-                </ul>
-            </div>
-            <!--HIDDEN ON DESKTOP-->
-            <div id="navbar" class='center hide-on-med-and-down'>
-                <ul class='nbar tabs-transparent section table-of-contents'>
-                    <li class="nitem"><a class="indigo-text darken 4" href="#home">Home</a></li>
-                    <!-- <li class="nitem"><a class="indigo-text darken 4" href="#register">Register</a></li> -->
-                    <li class="nitem"><a class="indigo-text darken 4" href="#travel">Travel</a></li>
-                    <li class="nitem"><a class="indigo-text darken 4" href="#faq">FAQ</a></li>
-                    <li class="nitem"><a class="indigo-text darken 4" href="#schedule">Schedule</a></li>
-                    <li class="nitem"><a class="indigo-text darken 4" href="#sponsors">Sponsors</a></li>
-                    <li class="nitem"><a class="indigo-text darken 4" href="#contact">Contact</a></li>
-                </ul>
+            <div id="navbar" class='center'>
+              <!--MOBILE-->
+              <ul class='nbar tabs-transparent section table-of-contents hide-on-large-only'>
+                  <li class="nitem"><a class="indigo-text darken 4" href="#home">Home</a></li>
+                  <!-- <li class="nitem"><a class="indigo-text darken 4" href="#register">Register</a></li> -->
+                  <li class="nitem"><a class="indigo-text darken 4" href="#travel">Travel</a></li>
+                  <li class="nitem"><a class="indigo-text darken 4" href="#faq">FAQ</a></li>
+                  <li class="nitem"><a class="indigo-text darken 4" href="#schedule">Schedule</a></li>
+              </ul>
+              <!--DESKTOP-->
+              <ul class='nbar tabs-transparent section table-of-contents hide-on-med-and-down'>
+                  <li class="nitem"><a class="indigo-text darken 4" href="#home">Home</a></li>
+                  <!-- <li class="nitem"><a class="indigo-text darken 4" href="#register">Register</a></li> -->
+                  <li class="nitem"><a class="indigo-text darken 4" href="#travel">Travel</a></li>
+                  <li class="nitem"><a class="indigo-text darken 4" href="#faq">FAQ</a></li>
+                  <li class="nitem"><a class="indigo-text darken 4" href="#schedule">Schedule</a></li>
+                  <li class="nitem"><a class="indigo-text darken 4" href="#sponsors">Sponsors</a></li>
+                  <li class="nitem"><a class="indigo-text darken 4" href="#contact">Contact</a></li>
+              </ul>
             </div>
         </div>
 
@@ -102,7 +73,15 @@
             <div class="section background-dark scrollspy" id='travel'>
                 <div class="container">
                     <h2 class="center">Travel Information</h2>
-                    <!--NOT MOBILE-->
+                    <!--MOBILE-->
+                    <div class="row hide-on-large-only">
+                        <div class="col s12 center">
+                            {% for para in travel %}
+                            <p>{{ para }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <!--DESKTOP-->
                     <div class="row hide-on-med-and-down">
                         <div class="col s6 center">
                             {% for para in travel %}
@@ -118,14 +97,6 @@
                               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBzbKXif59z3vKRfUXR3LOs_Oc5w-GpB2o
                                 &q=Wollen+Gym+UNC+NC" allowfullscreen>
                             </iframe>
-                        </div>
-                    </div>
-                    <!-- MOBILE -->
-                    <div class="row hide-on-large-only">
-                        <div class="col s12 center">
-                            {% for para in travel %}
-                            <p>{{ para }}</p>
-                            {% endfor %}
                         </div>
                     </div>
                 </div>
