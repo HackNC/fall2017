@@ -1,3 +1,9 @@
+.ratio-16x9, .map-container {
+  padding-bottom: 56.25% !important; }
+
+.ratio-4x3 {
+  padding-bottom: 75% !important; }
+
 .table-of-contents a:hover {
   background-color: rgba(255, 255, 255, 0.1) !important;
   padding-bottom: 15px !important;
@@ -6868,8 +6874,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .map-container {
   position: relative;
   height: 0;
-  overflow: hidden;
-  padding-bottom: 56.25% !important; }
+  overflow: hidden; }
 
 .map-container iframe {
   position: absolute;

@@ -1,16 +1,30 @@
+@function ratio($width, $height) {
+    @return percentage( $height / $width);
+}
+
+@mixin generateRatios($width, $height, $prefix: "ratio-") {
+    $class-name: $prefix + $width + "x" + $height;
+    .#{$class-name} {
+        padding-bottom: ratio($width, $height) !important;
+    }
+    // Output example: .ratio-16x9 {}
+}
+@include generateRatios(16,9);
+@include generateRatios(4,3);  // 4x3
+
 .table-of-contents {
     a {
 
         &:hover {
-            background-color: rgba(255, 255, 255, 0.1) ! important;
-            padding-bottom: 15px ! important;
-            border-bottom: 3px solid #fff ! important;
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            padding-bottom: 15px !important;
+            border-bottom: 3px solid #fff !important;
         }
         &.active {
-            font-weight: bold ! important;
-            background-color: rgba(255, 255, 255, 0.1) ! important;
+            font-weight: bold !important;
+            background-color: rgba(255, 255, 255, 0.1) !important;
             //padding-bottom: 15px ! important;
-            border-bottom: 15px solid #000 ! important;
+            border-bottom: 15px solid #000 !important;
         }
     }
 }
@@ -28,11 +42,11 @@
 }
 
 .component {
-    background-color: #A3628F ! important;
+    background-color: #A3628F !important;
 }
 
 .component:hover {
-    background-color: #A0598C ! important;
+    background-color: #A0598C !important;
 }
 
 .faq-dark {
@@ -45,10 +59,10 @@
 }
 
 .map-container {
+    @extend .ratio-16x9;
     position: relative;
     height: 0;
     overflow: hidden;
-    padding-bottom: 56.25% !important;
 }
 
 .map-container iframe {
