@@ -18,13 +18,13 @@
 @import 'materialize';
 
 .background-light {
-    background-color: #f9f2e1;    
+    background-color: #f9f2e1;
     color: #363359;
 }
 
 .background-dark {
     background-color: #363359;
-    color: #f9f2e1; 
+    color: #f9f2e1;
 }
 
 .component {
@@ -79,4 +79,7 @@
     z-index: 100;
     position: fixed;
     width: 100%;
+}
+.even {
+  background-color: #262349;
 }
