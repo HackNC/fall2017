@@ -1,5 +1,6 @@
 $.getJSON("/static/schedule.json", function(data) {
     data.forEach(function(date) {
+      var i = 0;
         $("#schedule-container").append(
            $('<h3>')
              .text(date['date'])
@@ -21,7 +22,7 @@ $.getJSON("/static/schedule.json", function(data) {
             var row = $('<tr>')
             row.append('<td>')
             $schBody.append(
-                $('<tr>')
+                $('<tr>', {"class" : (i++ % 2 == 0 ? "even" : "odd")})
                   .append($('<td>').text(element['time']))
                   .append($('<td>').text(element['event']))
                   .append($('<td>').text(element['location']))
@@ -29,11 +30,10 @@ $.getJSON("/static/schedule.json", function(data) {
         });
 
         console.log($schBody);
-                 
+
         var $alltable = $('<table>', {'class': 'schedule'});
-        
+
         $table.append($schBody);
         $('#schedule-container').append($table);
     });
 });
-

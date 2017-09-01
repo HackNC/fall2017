@@ -1,3 +1,11 @@
+* {
+    font-family: 'Josefin Sans';
+}
+
+* {
+    font-size: 20px;
+}
+
 .table-of-contents {
     a {
 
@@ -15,33 +23,55 @@
     }
 }
 
+@import 'components/palette';
 @import 'materialize';
 
 .background-light {
-    background-color: #f9f2e1;    
-    color: #363359;
+    background-color: $purple-1;
+    color: $white;
 }
 
 .background-dark {
-    background-color: #363359;
-    color: #f9f2e1; 
+    background-color: $purple-0;
+    color: $white;
 }
 
 .component {
-    background-color: #A3628F ! important;
+    background-color: $hunter-yellow;
+    color: $purple-4;
 }
 
 .component:hover {
-    background-color: #A0598C ! important;
+    background-color: $hunter-yellow;
+    color: $white;
+}
+
+#email:focus + label {
+    color: $white;
+    
+}
+
+#email:focus {
+    border-bottom: 1px solid $white;
+    box-shadow: 0 1px 0 0 $black;
+}
+   
+input[name='email'] .prefix.active {
+    color: $white;
+}
+   
+label[for='email'] {
+    color: $white;
 }
 
 .faq-dark {
-    background-color: #363359;
-    color: #f9f2e1;
+    background-color: $purple-0;
+    color: $white;
 }
 
 .faq-light {
-    background-color: #f9f2e1;
+    background-color: $purple-2;
+    color: $white;
 }
 
 .slide {
@@ -79,4 +109,12 @@
     z-index: 100;
     position: fixed;
     width: 100%;
+}
+
+.even {
+    background-color: $purple-1;
+}
+
+.odd {
+    background-color: $purple-3;
 }
