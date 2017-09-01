@@ -2,3 +2,4 @@
 .sass-cache
 *.log
 email_list
+*.pyc
