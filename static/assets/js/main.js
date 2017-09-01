@@ -3,7 +3,7 @@ var setBgAlpha = function(elem, alpha) {
 }
 
 $(document).ready(function() {
-    $('.scrollspy').scrollSpy();
+    $('.scrollspy').scrollSpy({"scrollOffset": 0});
     $('.modal').modal();
 
     var navtop = $('#navbar').offset().top;
