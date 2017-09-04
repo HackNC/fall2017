@@ -6,6 +6,10 @@
     font-size: 20px;
 }
 
+#home {
+    padding-bottom: 0;
+}
+
 .table-of-contents {
     a {
 
@@ -105,6 +109,7 @@ label[for='email'] {
 }
 
 .nfixed {
+    margin-top: 0;
     top: 0;
     z-index: 100;
     position: fixed;

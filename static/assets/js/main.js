@@ -9,6 +9,8 @@ $(document).ready(function() {
     var navtop = $('#navbar').offset().top;
     var navbar = document.getElementById('navbar');
 
+    $('#navwrapper').height($('#navbar').height());
+
     setBgAlpha(navbar, 0.1);
 
     $(window).scroll(function() {

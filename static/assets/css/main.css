@@ -4,6 +4,9 @@
 * {
   font-size: 20px; }
 
+#home {
+  padding-bottom: 0; }
+
 .table-of-contents a:hover {
   background-color: rgba(255, 255, 255, 0.1) !important;
   padding-bottom: 15px !important;
@@ -6901,6 +6904,7 @@ label[for='email'] {
   background-color: rgba(30, 136, 229, 0); }
 
 .nfixed {
+  margin-top: 0;
   top: 0;
   z-index: 100;
   position: fixed;
