@@ -3,3 +3,4 @@
 *.log
 email_list
 *.pyc
+materialize.css*
