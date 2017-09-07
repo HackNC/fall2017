@@ -6,19 +6,23 @@
     font-size: 20px;
 }
 
+#home {
+    padding-bottom: 0;
+}
+
 .table-of-contents {
     a {
 
         &:hover {
             background-color: rgba(255, 255, 255, 0.1) ! important;
-            padding-bottom: 15px ! important;
-            border-bottom: 3px solid #fff ! important;
+            // padding-bottom: 15px ! important;
+            border-bottom: 2px solid #fff ! important;
         }
         &.active {
             font-weight: bold ! important;
             background-color: rgba(255, 255, 255, 0.1) ! important;
             //padding-bottom: 15px ! important;
-            border-bottom: 15px solid #000 ! important;
+            border-bottom: 2px solid #000 ! important;
         }
     }
 }
@@ -86,10 +90,18 @@ label[for='email'] {
 
 .nbar {
     @extend .tabs;
+    padding-top: 0;
 }
 
 .nitem {
     @extend .tab;
+}
+
+.nitem a span{
+    font-size: 14px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
 }
 
 .ge {
@@ -102,9 +114,11 @@ label[for='email'] {
 
 #navbar {
     background-color: rgba(30, 136, 229, 0);
+    box-shadow: 1px 1px 1px -1px #000000;
 }
 
 .nfixed {
+    margin-top: 0;
     top: 0;
     z-index: 100;
     position: fixed;
