@@ -16,6 +16,13 @@
     </head>
 
     <body class='white-text'>
+
+<a id="mlh-trust-badge"
+    style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
+    href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=black"
+target="_blank"><img
+src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/black.svg"
+alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
         <div class="section background-light scrollspy" id='home'>
             <div class="row center">
                 <p class="title">HackNC 2017</p>
@@ -39,7 +46,7 @@
                     <ul class='nbar tabs-transparent section table-of-contents hide-on-large-only'>
                         <li class="nitem"><a href="#home"><span>Home</span></a></li>
                         <!-- <li class="nitem"><a href="#register">Register</a></li> <--></-->
-                        <li class="nitem"><a href="#travel"><span>Where and When</span></a></li>
+                        <li class="nitem"><a href="#travel"><span>Info</span></a></li>
                         <li class="nitem"><a href="#faq"><span>FAQ</span></a></li>
                         <li class="nitem"><a href="#contact"><span>Contact</span></a></li>
                     </ul>
@@ -47,7 +54,7 @@
                     <ul class='nbar tabs-transparent section table-of-contents hide-on-med-and-down'>
                         <li class="nitem"><a href="#home"><span>Home</span></a></li>
                         <!-- <li class="nitem"><a href="#register">Register</a></li> -->
-                        <li class="nitem"><a href="#travel"><span>Where and When</span></a></li>
+                        <li class="nitem"><a href="#travel"><span>Info</span></a></li>
                         <li class="nitem"><a href="#faq"><span>FAQ</span></a></li>
                         <li class="nitem"><a href="#contact"><span>Contact</span></a></li>
                     </ul>
@@ -75,13 +82,18 @@
 
             <div class="section background-dark scrollspy" id='travel'>
                 <div class="container">
-                    <h2 class="center">Where and When</h2>
+                    <h2 class="center">General Information</h2>
                     <!--MOBILE-->
                     <div class="row hide-on-large-only">
                         <div class="col s12 center">
                             {% for para in travel %}
-                            <p>{{ para }}</p>
+                            <p> {{ para }} </p>
                             {% endfor %}
+
+                            <p> We are a MLH sponsored event, please note that we
+                            follow the MLH code of conduct, which can be found
+                            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a></p>
+
                         </div>
                         <div class="col s12 center">
                             <iframe
@@ -101,6 +113,11 @@
                             {% for para in travel %}
                             <p>{{ para }}</p>
                             {% endfor %}
+                            <p> We are a MLH sponsored event, please note that we
+                            follow the MLH code of conduct, which can be found
+                            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a></p>
+
+
                         </div>
 
                         <div class="col s6 center">
