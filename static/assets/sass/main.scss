@@ -50,6 +50,15 @@
     color: $white;
 }
 
+.section a {
+    color: $hunter-yellow;
+    text-decoration: underline;
+}
+
+.section a:hover {
+    text-decoration: none;
+}
+
 #email:focus + label {
     color: $white;
     
