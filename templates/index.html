@@ -12,6 +12,8 @@
         <link href="https://fonts.googleapis.com/css?family=Bungee|Rubik|Work+Sans|Cabin|Arvo|Nunito|Josefin+Sans" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+        <link href="static/assets/css/flipclock.css" rel="stylesheet">
+
         <title>HackNC 2017</title>
     </head>
 
@@ -25,18 +27,22 @@ src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/black.svg"
 alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
         <div class="section background-light scrollspy" id='home'>
             <div class="row center">
-                <p class="title">HackNC 2017</p>
-                <div class='ge'>November 3rd - 5th, 2017</div>
-                <form method='post' id='pre-registration'>
-                <div class='input-field inline'>
-                    <input name='email' id='email' type='email' class='validate'></input>
-                    <label for='email' data-error='Please enter a valid
-                        email.'>Get on our mailing list!</label>
+                <div id="tubeswrapper">
+                    <img id="tubes" src="static/assets/images/tubes-only.png">
+                    <!-- <div class='center' id='countdown'></div> -->
+                    <div id='buttons'>
+                            <form method='post'>
+                            <div class='input-field inline'>
+                                <input name='email' id='email' type='email' class='validate'></input>
+                                <label for='email' data-error='Please enter a valid
+                                    email.'>Get on our mailing list!</label>
+                            </div>
+                            <button class='btn component'
+                            id='submit-email'>Submit!</button>
+                            </form>
+                            <p class="btn-large component">Registration Coming Soon!</p>
+                    </div>
                 </div>
-                <button class='btn component'
-                   id='submit-email'>Submit!</button>
-                </form>
-                <p class="btn-large component">Registration Coming Soon!</p>
             </div>
 
             <!-- TODO Setup Scrollspy here -->
@@ -217,6 +223,7 @@ alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
             <script src="static/assets/js/main.js"></script>
             <script src="static/assets/js/schedule.js"></script>
             <script src="static/assets/js/register.js"></script>
+            <script src="static/assets/js/flipclock.min.js"></script>
 
             {% if msg %}
             <script>
