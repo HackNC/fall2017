@@ -5,25 +5,47 @@
   font-size: 20px; }
 
 #home {
+  text-align: center;
   padding-bottom: 0;
   background-image: url("/static/assets/images/wires-only.png");
   background-size: 100%;
   background-repeat: no-repeat; }
 
 #home .row {
-  min-height: 400px;
-  height: 80%;
   margin: 0; }
 
-#tubeswrapper {
+#tubes-row {
+  position: relative;
+  height: 300px; }
+
+#tubes {
+  position: relative;
   background-image: url("/static/assets/images/tubes-only.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 100%; }
+  height: 100%;
+  bottom: 0; }
 
-#tubes {
-  opacity: 0;
-  width: 100%; }
+#countdown-content {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-right: -50%;
+  transform: translate(-50%, 0%); }
+  @media only screen and (min-width: 400px) {
+    #countdown-content {
+      height: 40%; } }
+  @media only screen and (min-width: 1248px) {
+    #countdown-content {
+      height: 35%; } }
+
+#center-wrapper {
+  text-align: center; }
+
+#countdown {
+  display: inline-block;
+  width: auto; }
 
 .table-of-contents a:hover {
   background-color: rgba(255, 255, 255, 0.1) !important;
@@ -31,7 +53,7 @@
 .table-of-contents a.active {
   font-weight: bold !important;
   background-color: rgba(255, 255, 255, 0.1) !important;
-  border-bottom: 2px solid #000 !important; }
+  border-bottom: 2px solid #fff !important; }
 
 .materialize-red {
   background-color: #e51c23 !important; }
@@ -6878,9 +6900,13 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   background-color: #4B3D9D;
   color: #FFFFFF; }
 
+#email-form {
+  display: inline-block; }
+
 .component {
   background-color: #FFD600;
-  color: #22156E; }
+  color: #22156E;
+  display: inline-block; }
 
 .component:hover {
   background-color: #FFD600;
