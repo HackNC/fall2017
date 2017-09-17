@@ -2,12 +2,27 @@ var setBgAlpha = function(elem, alpha) {
     console.log(elem.style.backgroundColor);
 }
 
-var bannerWidth = 1920;
-var bannerHeight = 840;
+var bannerWidth = 1080;
+var bannerHeight = 560;
+var maxWidth = 1600;
+var startScale = 1.2;
 
 $(document).ready(function() {
     $('.scrollspy').scrollSpy({"scrollOffset": 0});
     $('.modal').modal();
+    
+    var countdownSeconds = 1509753600 - (new Date).getTime()/1000;
+    var clock = $('#countdown').FlipClock(countdownSeconds, {
+		clockFace: 'DailyCounter',
+        countdown: true
+    });
+
+    $('.flip-clock-label').remove();
+    $('.flip-clock-wrapper').css('margin','0');
+    $('#tubes-row').css('height', $(document).width()/maxWidth*bannerHeight + 'px');
+    var scaleValue = Math.sqrt(startScale*$(window).width()/maxWidth);
+    $('#countdown').css('zoom', scaleValue);
+    $('#countdown').css('transform','scale(' + scaleValue + ')');
 
     var navtop = $('#navbar').offset().top;
     var navbar = document.getElementById('navbar');
@@ -15,16 +30,6 @@ $(document).ready(function() {
     $('#navwrapper').height($('#navbar').height());
 
     setBgAlpha(navbar, 0.1);
-    
-    // var countdownSeconds = 1509753600 - (new Date).getTime()/1000;
-    // var clock = $('#countdown').FlipClock(countdownSeconds, {
-	// 	clockFace: 'DailyCounter',
-    //     countdown: true
-    // });
-
-    // $('.flip-clock-label').remove();
-
-    // $('#home .row').css('height', $(document).width()/bannerWidth*bannerHeight + 'px');
 
     $(window).scroll(function() {
         if ($(window).scrollTop() > navtop) {
@@ -39,6 +44,9 @@ $(document).ready(function() {
     });
 });
 
-// window.onresize = function() {
-//     $('#home .row').css('height', $(document).width()/bannerWidth*bannerHeight + 'px');
-// };
+window.onresize = function() {
+    $('#tubes-row').css('height', $(document).width()/maxWidth*bannerHeight + 'px');
+    var scaleValue = Math.sqrt(startScale*$(window).width()/maxWidth);
+    $('#countdown').css('zoom', scaleValue);
+    $('#countdown').css('transform','scale(' + scaleValue + ')');
+};
