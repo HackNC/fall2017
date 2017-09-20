@@ -7,20 +7,18 @@
 #home {
   text-align: center;
   padding-bottom: 0;
-  background-image: url("/static/assets/images/wires-only.png");
+  background-image: url("/static/assets/images/wires-only2.png");
   background-size: 100%;
   background-repeat: no-repeat; }
 
-#home .row {
-  margin: 0; }
-
 #tubes-row {
   position: relative;
-  height: 300px; }
+  height: 300px;
+  margin-bottom: 1%; }
 
 #tubes {
   position: relative;
-  background-image: url("/static/assets/images/tubes-only.png");
+  background-image: url("/static/assets/images/tubes-only3.png");
   background-size: 100%;
   background-repeat: no-repeat;
   height: 100%;
@@ -35,10 +33,13 @@
   transform: translate(-50%, 0%); }
   @media only screen and (min-width: 400px) {
     #countdown-content {
-      height: 40%; } }
+      height: 25%; } }
   @media only screen and (min-width: 1248px) {
     #countdown-content {
-      height: 35%; } }
+      height: 30%; } }
+
+#forms {
+  height: 20%; }
 
 #center-wrapper {
   text-align: center; }
@@ -6893,11 +6894,11 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   /*shape-rendering: crispEdges;*/ }
 
 .background-light {
-  background-color: #9084CD;
+  background-color: #204F80;
   color: #FFFFFF; }
 
 .background-dark {
-  background-color: #4B3D9D;
+  background-color: #3D9BF5;
   color: #FFFFFF; }
 
 #email-form {
@@ -6933,11 +6934,11 @@ label[for='email'] {
   color: #FFFFFF; }
 
 .faq-dark {
-  background-color: #4B3D9D;
+  background-color: #204F80;
   color: #FFFFFF; }
 
 .faq-light {
-  background-color: #6658B0;
+  background-color: #3D9BF5;
   color: #FFFFFF; }
 
 .slide {

@@ -5,7 +5,10 @@ var setBgAlpha = function(elem, alpha) {
 var bannerWidth = 1080;
 var bannerHeight = 560;
 var maxWidth = 1600;
-var startScale = 1.2;
+var startScale = 1.3;
+var breakpoint = 1024/768;
+var longScale = 2.5;
+var shortScale = 3.2;
 
 $(document).ready(function() {
     $('.scrollspy').scrollSpy({"scrollOffset": 0});
@@ -23,6 +26,11 @@ $(document).ready(function() {
     var scaleValue = Math.sqrt(startScale*$(window).width()/maxWidth);
     $('#countdown').css('zoom', scaleValue);
     $('#countdown').css('transform','scale(' + scaleValue + ')');
+    var tubeHeight = $('#tubes').height();
+    var ratio = $(window).height()/$(window).width();
+    var heightScale = ratio > breakpoint ? longScale : shortScale;
+    $('#countdown-content').css('height', tubeHeight/heightScale);
+    console.log($('#tubes').height());
 
     var navtop = $('#navbar').offset().top;
     var navbar = document.getElementById('navbar');
@@ -34,12 +42,12 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if ($(window).scrollTop() > navtop) {
             $('#navbar').addClass('nfixed');
-            $('#navbar').css('background-color', 'rgba(75, 61, 157, 1)');
+            $('#navbar').css('background-color', 'rgba(32, 79, 128, 1)');
         }
         else {
             $('#navbar').removeClass('nfixed');
             var alpha = $(window).scrollTop() / navtop;
-            $('#navbar').css('background-color', 'rgba(75, 61, 157, '+ alpha + ')');
+            $('#navbar').css('background-color', 'rgba(32, 79, 128, '+ alpha + ')');
         }
     });
 });
@@ -49,4 +57,9 @@ window.onresize = function() {
     var scaleValue = Math.sqrt(startScale*$(window).width()/maxWidth);
     $('#countdown').css('zoom', scaleValue);
     $('#countdown').css('transform','scale(' + scaleValue + ')');
+    var tubeHeight = $('#tubes').height();
+    var ratio = $(window).height()/$(window).width();
+    var heightScale = ratio > breakpoint ? longScale : shortScale;
+    $('#countdown-content').css('height', tubeHeight/heightScale);
+    console.log($('#countdown-content').height());
 };
