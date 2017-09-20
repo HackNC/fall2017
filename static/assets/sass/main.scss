@@ -32,23 +32,24 @@ $breakpoints: (
 #home {
     text-align: center;
     padding-bottom: 0;
-    background-image: url('/static/assets/images/wires-only.png');
+    background-image: url('/static/assets/images/wires-only2.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 #home .row {
-    margin: 0;
+    // margin: 0;
 }
 
 #tubes-row {
     position: relative;
     height: 300px;
+    margin-bottom: 1%;
 }
 
 #tubes {
     position: relative;
-    background-image: url('/static/assets/images/tubes-only.png');
+    background-image: url('/static/assets/images/tubes-only3.png');
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100%;
@@ -63,11 +64,15 @@ $breakpoints: (
     margin-right: -50%;
     transform: translate(-50%, -0%);
     @include mq('phone') {
-        height: 40%;
+        height: 25%;
     }
     @include mq('desktop') {
-        height: 35%;
+        height: 30%;
     }
+}
+
+#forms {
+    height: 20%;
 }
 
 #center-wrapper {
@@ -100,12 +105,12 @@ $breakpoints: (
 @import 'materialize';
 
 .background-light {
-    background-color: $purple-1;
+    background-color: $blue-1;
     color: $white;
 }
 
 .background-dark {
-    background-color: $purple-0;
+    background-color: $blue-3;
     color: $white;
 }
 
@@ -152,12 +157,12 @@ label[for='email'] {
 }
 
 .faq-dark {
-    background-color: $purple-0;
+    background-color: $blue-1;
     color: $white;
 }
 
 .faq-light {
-    background-color: $purple-2;
+    background-color: $blue-3;
     color: $white;
 }
 
