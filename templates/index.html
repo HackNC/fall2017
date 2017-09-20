@@ -27,7 +27,7 @@ alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
             <div class="row center">
                 <p class="title">HackNC 2017</p>
                 <div class='ge'>November 3rd - 5th, 2017</div>
-                <form method='post'>
+                <form method='post' id='pre-registration'>
                 <div class='input-field inline'>
                     <input name='email' id='email' type='email' class='validate'></input>
                     <label for='email' data-error='Please enter a valid
@@ -232,5 +232,8 @@ Materialize.toast('{{ msg }}', 4000)
 
         ga('create', 'UA-61641591-3', 'auto');
         ga('send', 'pageview');
+        document.getElementById("pre-registration").addEventListener("submit", function() {
+            ga('send', 'event', 'pre-registration', 'submit');
+        })
     </script>
 </html>
