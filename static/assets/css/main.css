@@ -7,13 +7,13 @@
 #home {
   text-align: center;
   padding-bottom: 0;
-  background-image: url("/static/assets/images/wires-only2.png");
+  background-image: url("/static/assets/images/vign3.png");
   background-size: 100%;
   background-repeat: no-repeat; }
 
 #tubes-row {
   position: relative;
-  height: 300px;
+  height: 400px;
   margin-bottom: 1%; }
 
 #tubes {
@@ -6894,27 +6894,27 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   /*shape-rendering: crispEdges;*/ }
 
 .background-light {
-  background-color: #204F80;
+  background-color: #3178C4;
   color: #FFFFFF; }
 
 .background-dark {
-  background-color: #3D9BF5;
+  background-color: #204F80;
   color: #FFFFFF; }
 
 #email-form {
   display: inline-block; }
 
 .component {
-  background-color: #FFD600;
+  background-color: #FFC027;
   color: #22156E;
   display: inline-block; }
 
 .component:hover {
-  background-color: #FFD600;
+  background-color: #FFC027;
   color: #FFFFFF; }
 
 .section a {
-  color: #FFD600;
+  color: #FFC027;
   text-decoration: underline; }
 
 .section a:hover {
@@ -6938,7 +6938,11 @@ label[for='email'] {
   color: #FFFFFF; }
 
 .faq-light {
-  background-color: #3D9BF5;
+  background-color: #3178C4;
+  color: #FFFFFF; }
+
+.faq-ans {
+  background-color: #272727;
   color: #FFFFFF; }
 
 .slide {

@@ -3,7 +3,7 @@ var setBgAlpha = function(elem, alpha) {
 }
 
 var bannerWidth = 1080;
-var bannerHeight = 560;
+var bannerHeight = 580;
 var maxWidth = 1600;
 var startScale = 1.3;
 var breakpoint = 1024/768;

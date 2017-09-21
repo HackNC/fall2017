@@ -32,18 +32,14 @@ $breakpoints: (
 #home {
     text-align: center;
     padding-bottom: 0;
-    background-image: url('/static/assets/images/wires-only2.png');
+    background-image: url('/static/assets/images/vign3.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-#home .row {
-    // margin: 0;
-}
-
 #tubes-row {
     position: relative;
-    height: 300px;
+    height: 400px;
     margin-bottom: 1%;
 }
 
@@ -105,12 +101,12 @@ $breakpoints: (
 @import 'materialize';
 
 .background-light {
-    background-color: $blue-1;
+    background-color: $blue-2;
     color: $white;
 }
 
 .background-dark {
-    background-color: $blue-3;
+    background-color: $blue-1;
     color: $white;
 }
 
@@ -119,18 +115,18 @@ $breakpoints: (
 }
 
 .component {
-    background-color: $hunter-yellow;
+    background-color: $yellow-1;
     color: $purple-4;
     display: inline-block;
 }
 
 .component:hover {
-    background-color: $hunter-yellow;
+    background-color: $yellow-1;
     color: $white;
 }
 
 .section a {
-    color: $hunter-yellow;
+    color: $yellow-1;
     text-decoration: underline;
 }
 
@@ -162,7 +158,12 @@ label[for='email'] {
 }
 
 .faq-light {
-    background-color: $blue-3;
+    background-color: $blue-2;
+    color: $white;
+}
+
+.faq-ans {
+    background-color: $light-gray;
     color: $white;
 }
 
