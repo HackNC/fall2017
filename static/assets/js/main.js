@@ -30,7 +30,6 @@ $(document).ready(function() {
     var ratio = $(window).height()/$(window).width();
     var heightScale = ratio > breakpoint ? longScale : shortScale;
     $('#countdown-content').css('height', tubeHeight/heightScale);
-    console.log($('#tubes').height());
 
     var navtop = $('#navbar').offset().top;
     var navbar = document.getElementById('navbar');
@@ -61,5 +60,4 @@ window.onresize = function() {
     var ratio = $(window).height()/$(window).width();
     var heightScale = ratio > breakpoint ? longScale : shortScale;
     $('#countdown-content').css('height', tubeHeight/heightScale);
-    console.log($('#countdown-content').height());
 };
