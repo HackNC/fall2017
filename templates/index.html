@@ -93,8 +93,7 @@ alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
             <div class="section background-dark scrollspy" id='travel'>
                 <div class="container">
                     <h2 class="center">General Information</h2>
-                    <!--MOBILE-->
-                    <div class="row hide-on-large-only">
+                    <div class="row">
                         <div class="col s12 center">
                             {% for para in travel %}
                             <p> {{ para }} </p>
@@ -105,42 +104,16 @@ alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
                             <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a></p>
 
                         </div>
-                        <div class="col s12 center">
-                            <iframe
-                              width="300"
-                              height="300"
-                              frameborder="0" style="border:0"
-                              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBzbKXif59z3vKRfUXR3LOs_Oc5w-GpB2o
-                                &q=Woollen+Gymnasium+UNC+NC" allowfullscreen>
-                            </iframe>
-                        </div>
-
-                    </div>
-
-                    <!--DESKTOP-->
-                    <div class="row hide-on-med-and-down">
-                        <div class="col s6 center">
-                            {% for para in travel %}
-                            <p>{{ para }}</p>
-                            {% endfor %}
-                            <p> We are a MLH sponsored event, so please note that we
-                            follow the MLH code of conduct, which can be found
-                            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a></p>
-
-
-                        </div>
-
-                        <div class="col s6 center">
-                            <iframe
-                              width="600"
-                              height="600"
-                              frameborder="0" style="border:0"
-                              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBzbKXif59z3vKRfUXR3LOs_Oc5w-GpB2o
-                                &q=Woollen+Gymnasium+UNC+NC" allowfullscreen>
-                            </iframe>
-                        </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="map-container">
+                <iframe
+                frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBzbKXif59z3vKRfUXR3LOs_Oc5w-GpB2o
+                &q=Wollen+Gym+UNC+NC" allowfullscreen>
+                </iframe>
             </div>
 
             <div class="section background-light scrollspy" id='faq'>
