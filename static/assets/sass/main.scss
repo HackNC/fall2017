@@ -67,10 +67,6 @@ $breakpoints: (
     }
 }
 
-#forms {
-    height: 20%;
-}
-
 #center-wrapper {
     text-align: center;
 }
@@ -125,13 +121,14 @@ $breakpoints: (
     color: $white;
 }
 
-.section a {
-    color: $yellow-1;
-    text-decoration: underline;
-}
-
-.section a:hover {
+#register {
+    @extend .black-text;
+    height: 50% !important;
+    width: 20% !important;
+    min-width: 200px !important;
     text-decoration: none;
+    margin: 10px;
+    font-size: 80% !important;
 }
 
 #email:focus + label {
@@ -208,10 +205,6 @@ label[for='email'] {
 
 .ge {
     padding-bottom: 30px;
-}
-
-#register {
-    @extend .black-text;
 }
 
 #navbar {
