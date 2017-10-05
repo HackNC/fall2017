@@ -1,4 +1,5 @@
 $breakpoints: (
+    "phone-thin":   380px,
     "phone":        400px,
     "phone-wide":   480px,
     "phablet":      560px,
@@ -74,6 +75,24 @@ $breakpoints: (
 #countdown {
     display: inline-block;
     width: auto;
+    zoom: 0.5;
+    transform: scale(0.5);
+    @include mq('phone') {
+        zoom: 0.6;
+        transform: scale(0.6);
+    }
+    @include mq('tablet') {
+        zoom: 0.8;
+        transform: scale(0.8);
+    }
+    @include mq('tablet-wide') {
+        zoom: 0.9;
+        transform: scale(0.9);
+    }
+    @include mq('desktop') {
+        zoom: 1.1;
+        transform: scale(1.1);
+    }
 }
 
 .table-of-contents {

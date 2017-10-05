@@ -24,8 +24,8 @@ $(document).ready(function() {
     $('.flip-clock-wrapper').css('margin','0');
     $('#tubes-row').css('height', $(document).width()/maxWidth*bannerHeight + 'px');
     var scaleValue = Math.sqrt(startScale*$(window).width()/maxWidth);
-    $('#countdown').css('zoom', scaleValue);
-    $('#countdown').css('transform','scale(' + scaleValue + ')');
+    // $('#countdown').css('zoom', scaleValue);
+    // $('#countdown').css('transform','scale(' + scaleValue + ')');
     var tubeHeight = $('#tubes').height();
     var ratio = $(window).height()/$(window).width();
     var heightScale = ratio > breakpoint ? longScale : shortScale;
@@ -54,8 +54,8 @@ $(document).ready(function() {
 window.onresize = function() {
     $('#tubes-row').css('height', $(document).width()/maxWidth*bannerHeight + 'px');
     var scaleValue = Math.sqrt(startScale*$(window).width()/maxWidth);
-    $('#countdown').css('zoom', scaleValue);
-    $('#countdown').css('transform','scale(' + scaleValue + ')');
+    // $('#countdown').css('zoom', scaleValue);
+    // $('#countdown').css('transform','scale(' + scaleValue + ')');
     var tubeHeight = $('#tubes').height();
     var ratio = $(window).height()/$(window).width();
     var heightScale = ratio > breakpoint ? longScale : shortScale;
