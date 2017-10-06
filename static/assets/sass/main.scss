@@ -9,6 +9,9 @@ $breakpoints: (
     "desktop-wide": 1440px
 );
 
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
 @mixin mq($width, $type: min) {
     @if map_has_key($breakpoints, $width) {
         $width: map_get($breakpoints, $width);
@@ -78,12 +81,6 @@ $breakpoints: (
 
 .table-of-contents {
     a {
-
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.1) ! important;
-            // padding-bottom: 15px ! important;
-            border-bottom: 2px solid #fff ! important;
-        }
         &.active {
             font-weight: bold ! important;
             background-color: rgba(255, 255, 255, 0.1) ! important;
@@ -226,4 +223,26 @@ label[for='email'] {
 
 .odd {
     background-color: $purple-3;
+}
+
+.section {
+    #{$a-tags} {
+        color: $yellow-1;
+        text-decoration: none;
+    }
+
+    #{$a-tags-hover} {
+        color: $yellow-1;
+        text-decoration: underline;
+    }
+}
+
+$sponsor-color: color('grey', 'lighten-2');
+
+.sponsors {
+    background: $sponsor-color;
+    background: -webkit-radial-gradient($sponsor-color 30%, $blue-1); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient($sponsor-color 30%, $blue-1); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient($sponsor-color 30%, $blue-1); /* For Firefox 3.6 to 15 */
+    background: radial-gradient($sponsor-color 30%, $blue-1); /* Standard syntax */
 }
