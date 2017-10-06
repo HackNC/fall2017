@@ -94,7 +94,7 @@ $a-tags-hover: 'a:active, a:hover';
 @import 'materialize';
 
 .background-light {
-    background-color: $blue-2;
+    background-color: $blue-1;
     color: $white;
 }
 
@@ -160,12 +160,12 @@ label[for='email'] {
 }
 
 .faq-dark {
-    background-color: $blue-1;
+    background-color: $gray;
     color: $white;
 }
 
 .faq-light {
-    background-color: $blue-2;
+    background-color: $blue-1;
     color: $white;
 }
 
@@ -237,12 +237,19 @@ label[for='email'] {
     }
 }
 
-$sponsor-color: color('grey', 'lighten-2');
+$sponsor-color: #e4e4df;
+$gradient-color: $table-gray;
+$radial-percent: 10%;
 
 .sponsors {
     background: $sponsor-color;
-    background: -webkit-radial-gradient($sponsor-color 30%, $blue-1); /* Safari 5.1 to 6.0 */
-    background: -o-radial-gradient($sponsor-color 30%, $blue-1); /* For Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient($sponsor-color 30%, $blue-1); /* For Firefox 3.6 to 15 */
-    background: radial-gradient($sponsor-color 30%, $blue-1); /* Standard syntax */
+    color: $blue-1;
+    // background: -webkit-radial-gradient($sponsor-color $radial-percent, $gradient-color); /* Safari 5.1 to 6.0 */
+    // background: -o-radial-gradient($sponsor-color $radial-percent, $gradient-color); /* For Opera 11.6 to 12.0 */
+    // background: -moz-radial-gradient($sponsor-color $radial-percent, $gradient-color); /* For Firefox 3.6 to 15 */
+    // background: radial-gradient($sponsor-color $radial-percent, $gradient-color); /* Standard syntax */
+}
+
+.sponsors a {
+    color: $gray
 }
