@@ -13,8 +13,7 @@ var shortScale = 3.2;
 var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 $(document).ready(function() {
-    $('.scrollspy').scrollSpy({"scrollOffset": 0});
-    $('.modal').modal();
+    $('.scrollspy').scrollSpy({"scrollOffset": 20});
     
     var countdownSeconds = 1509753600 - (new Date).getTime()/1000;
     var clock = $('#countdown').FlipClock(countdownSeconds, {
