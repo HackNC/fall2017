@@ -37,7 +37,7 @@ $(document).ready(function() {
     else {
         $('#countdown-content').remove();
         $('#date').empty();
-        $('tubes').css('background-image', '/static/assets/images/tubes-only4.png');
+        $('#tubes').css('background-image', '/static/assets/images/tubes-only4.png');
     }
 
     var navtop = $('#navbar').offset().top;
