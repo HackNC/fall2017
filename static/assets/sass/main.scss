@@ -160,7 +160,7 @@ label[for='email'] {
 }
 
 .faq-dark {
-    background-color: $gray;
+    background-color: $;
     color: $white;
 }
 
@@ -237,7 +237,7 @@ label[for='email'] {
     }
 }
 
-$sponsor-color: #e4e4df;
+$sponsor-color: $gmaps;
 $gradient-color: $table-gray;
 $radial-percent: 10%;
 
@@ -248,8 +248,15 @@ $radial-percent: 10%;
     // background: -o-radial-gradient($sponsor-color $radial-percent, $gradient-color); /* For Opera 11.6 to 12.0 */
     // background: -moz-radial-gradient($sponsor-color $radial-percent, $gradient-color); /* For Firefox 3.6 to 15 */
     // background: radial-gradient($sponsor-color $radial-percent, $gradient-color); /* Standard syntax */
+    #{$a-tags} {
+        color: $blue-3;
+        text-decoration: none;
+    }
+    #{$a-tags-hover} {
+        color: $blue-3;
+        text-decoration: underline;
+    }
+
 }
 
-.sponsors a {
-    color: $gray
-}
+

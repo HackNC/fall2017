@@ -6996,8 +6996,11 @@ label[for='email'] {
 .sponsors {
   background: #e4e4df;
   color: #204F80; }
-
-.sponsors a {
-  color: #2C2C31; }
+  .sponsors a, .sponsors a:active, .sponsors a:hover, .sponsors a:visited {
+    color: #3178C4;
+    text-decoration: none; }
+  .sponsors a:active, .sponsors a:hover {
+    color: #3178C4;
+    text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */
