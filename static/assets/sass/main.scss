@@ -121,11 +121,8 @@ $a-tags-hover: 'a:active, a:hover';
 #register {
     @extend .black-text;
     height: 50% !important;
-    width: 20% !important;
-    min-width: 200px !important;
     text-decoration: none;
-    margin: 10px;
-    font-size: 80% !important;
+    margin: 10px !important;
 }
 
 #email:focus + label {
