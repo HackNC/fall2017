@@ -37,7 +37,7 @@ alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
                     </div>
                 </div>
             </div>
-            November 3rd - 5th <br/>
+            <span id="date">November 3rd - 5th <br/></span>
 
             <div id="registration">
                 <a id="register" class="btn-large component" href="https://hacknc.typeform.com/to/a9xMrB">Register</a>
@@ -235,8 +235,8 @@ Gymnasium at UNC-Chapel Hill!</p>
 
         ga('create', 'UA-61641591-3', 'auto');
         ga('send', 'pageview');
-        document.getElementById("register").addEventListener("submit", function() {
-            ga('send', 'event', 'register-button', 'submit');
+        document.getElementById("register").addEventListener("click", function() {
+            ga('send', 'event', 'register-button', 'click');
         })
     </script>
 </html>
