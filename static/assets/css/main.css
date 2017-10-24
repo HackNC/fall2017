@@ -2,7 +2,7 @@
   font-family: 'Josefin Sans'; }
 
 * {
-  font-size: 20px; }
+  font-size: 1.2rem; }
 
 #home {
   text-align: center;
@@ -6892,7 +6892,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   color: #FFFFFF; }
 
 .background-dark {
-  background-color: #204F80;
+  background-color: #193e66;
   color: #FFFFFF; }
 
 #email-form {
@@ -6937,7 +6937,7 @@ label[for='email'] {
   height: 100%; }
 
 .faq-dark {
-  background-color: #2C2C31;
+  background-color: #193e66;
   color: #FFFFFF; }
 
 .faq-light {
@@ -6990,6 +6990,33 @@ label[for='email'] {
 .section a:active, .section a:hover {
   color: #FFC027;
   text-decoration: underline; }
+
+.section h2 {
+  margin-bottom: 0; }
+
+@media only screen and (min-width: 768px) {
+  .table-container {
+    width: 66.6666666667% !important;
+    margin-left: 16.6666666667% !important; } }
+
+.schedule table tr:nth-child(even) {
+  background-color: #204F80; }
+
+.schedule tr {
+  width: 100% !important;
+  border-radius: 5px; }
+
+.time, .event, .place {
+  border-radius: 0px; }
+
+.time {
+  width: 25%; }
+
+.day {
+  font-size: 1.3em; }
+
+.daycell {
+  font-size: 1.3em; }
 
 .sponsors {
   background: #e4e4df;
