@@ -1637,7 +1637,7 @@
 .black {
   background-color: #000000 !important; }
 
-.black-text, #registration a {
+.black-text {
   color: #000000 !important; }
 
 .white {
@@ -6898,22 +6898,20 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 #email-form {
   display: inline-block; }
 
-.component {
+.component, .component:focus {
   background-color: #FFC027;
-  color: #22156E;
-  display: inline-block; }
-
-.component:hover {
-  background-color: #FFC027;
-  color: #FFFFFF; }
-
-#registration a {
+  color: #000000;
+  display: inline-block;
   height: 50% !important;
   width: 20% !important;
   min-width: 200px !important;
   text-decoration: none;
   margin: 10px;
   font-size: 80% !important; }
+
+.component:hover {
+  background-color: #FFC027;
+  color: #FFFFFF; }
 
 #email:focus + label {
   color: #FFFFFF; }
