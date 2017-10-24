@@ -247,6 +247,10 @@ label[for='email'] {
     background-color: $blue-1;
 }
 
+.schedule table tr:nth-child(odd) {
+    background-color: $blue-12;
+}
+
 .schedule tr {
     width: 100% !important;
     border-radius: 5px;

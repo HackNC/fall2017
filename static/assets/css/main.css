@@ -7002,6 +7002,9 @@ label[for='email'] {
 .schedule table tr:nth-child(even) {
   background-color: #204F80; }
 
+.schedule table tr:nth-child(odd) {
+  background-color: #193e66; }
+
 .schedule tr {
   width: 100% !important;
   border-radius: 5px; }
