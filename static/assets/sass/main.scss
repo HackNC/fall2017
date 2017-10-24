@@ -118,7 +118,7 @@ $a-tags-hover: 'a:active, a:hover';
     color: $white;
 }
 
-#register {
+#registration a {
     @extend .black-text;
     height: 50% !important;
     width: 20% !important;
