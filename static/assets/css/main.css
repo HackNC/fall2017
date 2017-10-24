@@ -1637,7 +1637,7 @@
 .black {
   background-color: #000000 !important; }
 
-.black-text, #register {
+.black-text, #registration a {
   color: #000000 !important; }
 
 .white {
@@ -6907,7 +6907,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   background-color: #FFC027;
   color: #FFFFFF; }
 
-#register {
+#registration a {
   height: 50% !important;
   width: 20% !important;
   min-width: 200px !important;
