@@ -6999,10 +6999,10 @@ label[for='email'] {
     width: 66.6666666667% !important;
     margin-left: 16.6666666667% !important; } }
 
-.schedule table tr:nth-child(even) {
+#schedule table tr:nth-child(even) {
   background-color: #204F80; }
 
-.schedule table tr:nth-child(odd) {
+#schedule table tr:nth-child(odd) {
   background-color: #193e66; }
 
 .schedule tr {

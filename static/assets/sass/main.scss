@@ -243,11 +243,11 @@ label[for='email'] {
     }
 }
 
-.schedule table tr:nth-child(even) {
+#schedule table tr:nth-child(even) {
     background-color: $blue-1;
 }
 
-.schedule table tr:nth-child(odd) {
+#schedule table tr:nth-child(odd) {
     background-color: $blue-12;
 }
 
