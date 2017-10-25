@@ -1,8 +1,9 @@
 * {
-  font-family: 'Josefin Sans'; }
-
-* {
+  font-family: 'Josefin Sans';
   font-size: 1.2rem; }
+  @media only screen and (min-width: 768px) {
+    * {
+      font-size: 1.3rem; } }
 
 #home {
   text-align: center;
@@ -6996,14 +6997,24 @@ label[for='email'] {
 
 @media only screen and (min-width: 768px) {
   .table-container {
-    width: 66.6666666667% !important;
-    margin-left: 16.6666666667% !important; } }
+    width: 60% !important;
+    margin-left: 20% !important; } }
+
+#travel .row {
+  margin-bottom: 0; }
+
+.grant-table {
+  width: 60%;
+  min-width: 280px; }
+
+.grant-table td, .grant-table th {
+  padding: 0; }
 
 #schedule table tr:nth-child(even) {
-  background-color: #204F80; }
+  background-color: #193e66; }
 
 #schedule table tr:nth-child(odd) {
-  background-color: #193e66; }
+  background-color: #204F80; }
 
 .schedule tr {
   width: 100% !important;
@@ -7016,10 +7027,14 @@ label[for='email'] {
   width: 25%; }
 
 .day {
-  font-size: 1.3em; }
+  background-color: transparent !important; }
 
 .daycell {
-  font-size: 1.3em; }
+  background-color: transparent;
+  font-size: 1.7rem; }
+  @media only screen and (min-width: 768px) {
+    .daycell {
+      font-size: 2rem; } }
 
 .sponsors {
   background: #e4e4df;
