@@ -29,7 +29,7 @@ $a-tags-hover: 'a:active, a:hover';
 }
 
 * {
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 #home {
@@ -99,7 +99,7 @@ $a-tags-hover: 'a:active, a:hover';
 }
 
 .background-dark {
-    background-color: $blue-1;
+    background-color: $blue-12;
     color: $white;
 }
 
@@ -123,11 +123,6 @@ $a-tags-hover: 'a:active, a:hover';
     background-color: $yellow-1;
     color: $white;
 }
-
-// .component:active {
-//     background-color: $yellow-1;
-//     color: $black;
-// }
 
 #email:focus + label {
     color: $white;
@@ -153,7 +148,6 @@ label[for='email'] {
 }
 
 .map-container iframe {
-    // position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -161,7 +155,7 @@ label[for='email'] {
 }
 
 .faq-dark {
-    background-color: $gray;
+    background-color: $blue-12;
     color: $white;
 }
 
@@ -238,6 +232,46 @@ label[for='email'] {
     }
 }
 
+.section h2 {
+    margin-bottom: 0;
+}
+
+.table-container {
+    @include mq('tablet') {
+        width: 66.6666666667% !important;
+        margin-left: 16.6666666667% !important;
+    }
+}
+
+.schedule table tr:nth-child(even) {
+    background-color: $blue-1;
+}
+
+.schedule table tr:nth-child(odd) {
+    background-color: $blue-12;
+}
+
+.schedule tr {
+    width: 100% !important;
+    border-radius: 5px;
+}
+
+.time, .event, .place {
+    border-radius: 0px;
+}
+
+.time {
+    width: 25%;
+}
+
+.day {
+    font-size: 1.3em;
+}
+
+.daycell {
+    font-size: 1.3em;
+}
+
 $sponsor-color: $gmaps;
 $gradient-color: $table-gray;
 $radial-percent: 10%;
@@ -245,10 +279,6 @@ $radial-percent: 10%;
 .sponsors {
     background: $sponsor-color;
     color: $blue-1;
-    // background: -webkit-radial-gradient($sponsor-color $radial-percent, $gradient-color); /* Safari 5.1 to 6.0 */
-    // background: -o-radial-gradient($sponsor-color $radial-percent, $gradient-color); /* For Opera 11.6 to 12.0 */
-    // background: -moz-radial-gradient($sponsor-color $radial-percent, $gradient-color); /* For Firefox 3.6 to 15 */
-    // background: radial-gradient($sponsor-color $radial-percent, $gradient-color); /* Standard syntax */
     #{$a-tags} {
         color: $blue-3;
         text-decoration: none;
