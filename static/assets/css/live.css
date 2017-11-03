@@ -6868,8 +6868,20 @@ body {
   background-color: rgba(255, 255, 255, 0.1) !important;
   border-bottom: 2px solid #fff !important; }
 
+#live-content {
+  padding-top: 20px; }
+
+#live-content .row .col iframe, #live-content .row .slide iframe {
+  margin: 1rem 0 1rem 0 !important;
+  width: 100% !important; }
+
 .card {
-  background-color: #FFFFFF; }
+  margin: 1rem 0 2rem 0 !important;
+  background-color: #FFFFFF;
+  border-radius: 5px; }
+
+.card .card-action:last-child {
+  border-radius: 0 0 5px 5px; }
 
 .background-light {
   background-color: #204F80;
@@ -6890,6 +6902,7 @@ body {
   padding-top: 0; }
 
 .nitem a span {
+  font-family: 'Josefin Sans';
   font-size: 14px;
   position: relative;
   top: 40%;
