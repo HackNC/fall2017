@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Bungee|Rubik|Work+Sans|Cabin|Arvo|Nunito|Josefin+Sans" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+        <link href="static/assets/css/flipclock.css" rel="stylesheet">
         <link rel='icon' href='/static/assets/images/favicon.png'>
 
         <title>HackNC 2017</title>
@@ -28,6 +29,11 @@ alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
         <div class="background-dark scrollspy" id='home'>
             <div class="row center" id="tubes-row">
                 <div id="tubes">
+                    <div id='countdown-content'>		
+                        <div id='countdown-wrapper'>		
+                            <div id='countdown'></div>		
+                        </div>		
+                    </div>
                 </div>
             </div>
             <span id="date">November 3rd - 5th <br/></span>
@@ -265,7 +271,7 @@ Gymnasium at UNC-Chapel Hill!</p>
                                 <tr><td class='time'>7:00 AM</td><td class='event'>Check In</td><td class='place'>Woollen Lobby</td></tr>
                                 <tr><td class='time'>8:00 AM</td><td class='event'>Breakfast</td><td class='place'>Woollen Gym</td></tr>
                                 <tr><td class='time'>10:00 AM</td><td class='event'>Opening Ceremony</td><td class='place'>Woollen Gym</td></tr>
-                                <tr><td class='time'>11:00 AM</td><td class='event'>Hacking Begins</td><td class='place'>Woollen Gym</td></tr>
+                                <tr><td class='time'>11:00 AM</td><td class='event'>Hacking Begins</td><td class='place'>Everywhere</td></tr>
                                 <tr><td class='time'>11:00 AM</td><td class='event'>Sponsor Fair</td><td class='place'>Woollen Gym</td></tr>
                                 <tr><td class='time'>12:00 PM</td><td class='event'>Lunch</td><td class='place'>Woollen Gym</td></tr>
                                 <tr><td class='time'>1:00 PM</td><td class='event'>Workshop and Talks Begin</td><td class='place'>Classrooms</td></tr>
@@ -318,7 +324,7 @@ Gymnasium at UNC-Chapel Hill!</p>
                 <h5 class="center">(More to be announced at the event)</h5>
                 <div class='container center'>
                     <div class='row'>
-                        <div class='col s12 m6 l4 center'>
+                        <div class='col s12 m4 l4 center'>
                             <div class='card'>
                                 <div class='card-content'>
                                     <h5>HackNC</h5>
@@ -327,7 +333,7 @@ Gymnasium at UNC-Chapel Hill!</p>
                                 </div>
                             </div>
                         </div>
-                        <div class='col s12 m6 l4 center'>
+                        <div class='col s12 m4 l4 center'>
                             <div class='card'>
                                 <div class='card-content'>
                                     <h5>HackNC</h5>
@@ -336,7 +342,7 @@ Gymnasium at UNC-Chapel Hill!</p>
                                 </div>
                             </div>
                         </div>
-                        <div class='col s12 m6 l4 center'>
+                        <div class='col s12 m4 l4 center'>
                             <div class='card'>
                                 <div class='card-content'>
                                     <h5>HackNC</h5>
@@ -347,7 +353,7 @@ Gymnasium at UNC-Chapel Hill!</p>
                         </div>
                     </div>
                     <div class='row'>
-                        <div class='col s12 m6 l4 center'>
+                        <div class='col s12 m4 l4 center'>
                             <div class='card'>
                                 <div class='card-content'>
                                     <h5>Capital One</h5>
@@ -356,12 +362,21 @@ Gymnasium at UNC-Chapel Hill!</p>
                                 </div>
                             </div>
                         </div>
-                        <div class='col s12 m6 l4 center'>
+                        <div class='col s12 m4 l4 center'>
                             <div class='card'>
                                 <div class='card-content'>
                                     <h5>CapTech</h5>
                                     <p><u>Most Community Impact</u></p>
                                     <p>One Amazon Echo Dot per Team Member</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col s12 m4 l4 center'>
+                            <div class='card'>
+                                <div class='card-content'>
+                                    <h5>SentryOne</h5>
+                                    <p><u>Best Use of the Microsoft Stack</u></p>
+                                    <p>One $50 Amazon Gift Card per Team Member</p>
                                 </div>
                             </div>
                         </div>
@@ -390,6 +405,7 @@ Gymnasium at UNC-Chapel Hill!</p>
             <script src="/static/assets/js/main.js"></script>
             <script src="/static/assets/js/schedule.js"></script>
             <script src="/static/assets/js/register.js"></script>
+            <script src="/static/assets/js/flipclock.min.js"></script>
 
     </body>
     <script>
