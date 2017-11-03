@@ -22,15 +22,15 @@ $(document).ready(function() {
 
     setBgAlpha(navbar, 0.1);
 
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > navtop) {
-            $('#navbar').addClass('nfixed');
-            $('#navbar').css('background-color', 'rgba(32, 79, 128, 1)');
-        }
-        else {
-            $('#navbar').removeClass('nfixed');
-            var alpha = $(window).scrollTop() / navtop;
-            $('#navbar').css('background-color', 'rgba(32, 79, 128, '+ alpha + ')');
-        }
-    });
+    // $(window).scroll(function() {
+    //     if ($(window).scrollTop() > navtop) {
+    //         $('#navbar').addClass('nfixed');
+    //         $('#navbar').css('background-color', 'rgba(32, 79, 128, 1)');
+    //     }
+    //     else {
+    //         $('#navbar').removeClass('nfixed');
+    //         var alpha = $(window).scrollTop() / navtop;
+    //         $('#navbar').css('background-color', 'rgba(32, 79, 128, '+ alpha + ')');
+    //     }
+    // });
 });

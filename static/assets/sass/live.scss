@@ -41,7 +41,6 @@ body {
 
 #home {
     text-align: center;
-    padding-bottom: 0;
     top: 0;
     left: 0;
     background-image: url('/static/assets/images/vign3L.png');
@@ -136,6 +135,10 @@ body {
 #navbar {
     background-color: rgba(30, 136, 229, 0);
     box-shadow: 1px 1px 1px -1px #000000;
+}
+
+.nbar {
+    overflow: hidden;
 }
 
 .nfixed {
