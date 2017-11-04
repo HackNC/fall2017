@@ -61,6 +61,7 @@ alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
         <div class='container' id='live-content'>
             <div class='row'>
                 <div class="card-col-l center-block col s12 m12 l6">
@@ -86,6 +87,30 @@ alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
                     <div class='card'>
                         <div class="card-content black-text">
                             <span class="card-title">WiFi Access <i class="fa fa-wifi"></i></span>
+=======
+        <div class='container'>
+            <div class='row'>
+                <div class="card-col-l center-block col s12 m8 l6">
+                    <div class='card'>
+                        <div class="card-content black-text">
+                            <span class="card-title">Announcements and Notifications</span>
+                            <p>Join one of the following and turn on notifications for updates</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://join.slack.com/t/hacknc2017/shared_invite/enQtMjY2Mzc2MzE2NDM4LTJiMjc3YWViOTg3NzViN2I3MmY5OTM2MDY3NTgxNjE3MmU0NTgwYTc1OTE5YmJkYmM4YzZmMmJhYTViNjlkNTA">
+                                Slack</a>
+                            <a href="https://www.facebook.com/events/122770508429733/">
+                                Facebook</a>
+                            <a href="https://twitter.com/thehacknc">
+                                Twitter</a>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="card-col-r center-block col s12 m8 l6">
+                    <div class='card'>
+                        <div class="card-content black-text">
+                            <span class="card-title">WiFi Access</span>
+>>>>>>> 340c6ee8c31e25086bcf5d700fd4ebaf55cfb664
                             <p>To access WiFi, you need to join one of the falling</p>
                             <table class="table" id='wifi-table'>
                                 <tbody>
@@ -96,6 +121,7 @@ alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
                             </table>
                         </div>
                     </div>
+<<<<<<< HEAD
                     <div class='card'>
                         <div class="card-content black-text">
                             <span class="card-title">Help Desk <i class="fa fa-question-circle"></i></span>
@@ -127,10 +153,12 @@ alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
                             <p>Need help with your hack? Stuck? Need ideas? Talk to a mentor! This year, HackNC is using HelpQ.</p>
                         </div>
                         <div class="card-action">
-                            <a href='https://help.hacknc.com/' 
+                            <a href='#' 
                             class="waves-effect wave-light btn">Request a mentor!</a>
                         </div>
                     </div>
+=======
+>>>>>>> 340c6ee8c31e25086bcf5d700fd4ebaf55cfb664
                 </div>
             </div>
         </div>
